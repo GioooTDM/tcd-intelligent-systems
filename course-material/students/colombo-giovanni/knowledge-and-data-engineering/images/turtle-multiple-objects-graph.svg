@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Turtle graph with two objects sharing a subject and predicate</title>
+  <desc id="desc">The resource fault1004 has two additionalInfo literal values.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#25344a"/>
+    </marker>
+    <style>
+      .heading { font: 700 25px system-ui, sans-serif; fill: #172033; }
+      .label { font: 700 22px system-ui, sans-serif; fill: #172033; }
+      .predicate { font: 700 18px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #334155; }
+      .kind { font: 16px system-ui, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="1200" height="540" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" class="heading">The same subject and predicate can have several objects</text>
+  <ellipse cx="255" cy="270" rx="200" ry="80" fill="#e8f2ff" stroke="#3973b9" stroke-width="3"/>
+  <text x="255" y="261" text-anchor="middle" class="label">ff:fault1004</text>
+  <text x="255" y="299" text-anchor="middle" class="kind">shared subject</text>
+  <line x1="430" y1="230" x2="790" y2="147" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="600" y="159" text-anchor="middle" class="predicate">ff:additionalInfo</text>
+  <rect x="815" y="88" width="325" height="120" rx="16" fill="#fff4d6" stroke="#c78616" stroke-width="3"/>
+  <text x="977" y="141" text-anchor="middle" class="label">"OK, panic now"</text>
+  <text x="977" y="176" text-anchor="middle" class="kind">literal object 1</text>
+  <line x1="430" y1="310" x2="790" y2="393" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="600" y="393" text-anchor="middle" class="predicate">ff:additionalInfo</text>
+  <rect x="815" y="332" width="325" height="120" rx="16" fill="#fff4d6" stroke="#c78616" stroke-width="3"/>
+  <text x="977" y="385" text-anchor="middle" class="label">"This is serious"</text>
+  <text x="977" y="420" text-anchor="middle" class="kind">literal object 2</text>
+  <text x="255" y="492" text-anchor="middle" class="kind">The comma reuses both the subject and predicate.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Turtle graph with several predicates sharing one subject</title>
+  <desc id="desc">The resource fault1004 has additionalInfo, priority, and probableCause relationships.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#25344a"/>
+    </marker>
+    <style>
+      .heading { font: 700 25px system-ui, sans-serif; fill: #172033; }
+      .label { font: 700 22px system-ui, sans-serif; fill: #172033; }
+      .predicate { font: 700 18px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #334155; }
+      .kind { font: 16px system-ui, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="1200" height="660" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" class="heading">Several predicates with the same subject</text>
+  <ellipse cx="260" cy="330" rx="205" ry="80" fill="#e8f2ff" stroke="#3973b9" stroke-width="3"/>
+  <text x="260" y="321" text-anchor="middle" class="label">ff:fault1004</text>
+  <text x="260" y="359" text-anchor="middle" class="kind">shared subject</text>
+  <line x1="437" y1="290" x2="792" y2="157" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="602" y="191" text-anchor="middle" class="predicate">ff:additionalInfo</text>
+  <rect x="815" y="90" width="325" height="120" rx="16" fill="#fff4d6" stroke="#c78616" stroke-width="3"/>
+  <text x="977" y="143" text-anchor="middle" class="label">"OK, panic now"</text>
+  <text x="977" y="178" text-anchor="middle" class="kind">literal</text>
+  <line x1="465" y1="330" x2="792" y2="330" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="628" y="299" text-anchor="middle" class="predicate">ff:priority</text>
+  <rect x="815" y="270" width="325" height="120" rx="16" fill="#fff4d6" stroke="#c78616" stroke-width="3"/>
+  <text x="977" y="323" text-anchor="middle" class="label">"maximum"</text>
+  <text x="977" y="358" text-anchor="middle" class="kind">literal</text>
+  <line x1="437" y1="370" x2="792" y2="503" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="598" y="477" text-anchor="middle" class="predicate">ff:probableCause</text>
+  <ellipse cx="977" cy="510" rx="163" ry="70" fill="#e9f8ed" stroke="#398a55" stroke-width="3"/>
+  <text x="977" y="503" text-anchor="middle" class="label">ff:softwareError</text>
+  <text x="977" y="540" text-anchor="middle" class="kind">resource</text>
+  <text x="260" y="610" text-anchor="middle" class="kind">The semicolons reuse this subject for all three triples.</text>
+</svg>

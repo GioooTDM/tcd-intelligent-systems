@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Turtle graph containing one triple</title>
+  <desc id="desc">The resource fault1004 is connected by additionalInfo to the literal OK, panic now.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#25344a"/>
+    </marker>
+    <style>
+      .heading { font: 700 25px system-ui, sans-serif; fill: #172033; }
+      .label { font: 700 23px system-ui, sans-serif; fill: #172033; }
+      .predicate { font: 700 20px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #334155; }
+      .kind { font: 16px system-ui, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="1200" height="420" fill="#ffffff"/>
+  <text x="600" y="48" text-anchor="middle" class="heading">One Turtle statement = one graph edge</text>
+  <ellipse cx="270" cy="220" rx="205" ry="78" fill="#e8f2ff" stroke="#3973b9" stroke-width="3"/>
+  <text x="270" y="211" text-anchor="middle" class="label">ff:fault1004</text>
+  <text x="270" y="248" text-anchor="middle" class="kind">resource (subject)</text>
+  <line x1="475" y1="220" x2="785" y2="220" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="630" y="187" text-anchor="middle" class="predicate">ff:additionalInfo</text>
+  <rect x="810" y="153" width="325" height="134" rx="16" fill="#fff4d6" stroke="#c78616" stroke-width="3"/>
+  <text x="972" y="211" text-anchor="middle" class="label">"OK, panic now"</text>
+  <text x="972" y="249" text-anchor="middle" class="kind">literal (object)</text>
+  <text x="270" y="355" text-anchor="middle" class="kind">subject</text>
+  <text x="630" y="355" text-anchor="middle" class="kind">predicate</text>
+  <text x="972" y="355" text-anchor="middle" class="kind">object</text>
+</svg>
