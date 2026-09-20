@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title description">
+  <title id="title">Relationship between research, innovation, Technology Readiness Levels, and funding</title>
+  <desc id="description">Technology progresses from basic research at TRL 1 to a commercial product at TRL 9. Research methods dominate earlier stages, innovation methods overlap in the middle, and funding shifts from public research funding towards private investment.</desc>
+
+  <rect width="1400" height="820" fill="#ffffff"/>
+
+  <style>
+    .sans { font-family: Inter, Arial, sans-serif; }
+    .title { font-size: 42px; font-weight: 650; fill: #172033; }
+    .section { font-size: 28px; font-weight: 700; fill: #172033; }
+    .trl { font-size: 24px; font-weight: 700; fill: #ffffff; }
+    .stage { font-size: 16px; font-weight: 600; fill: #253047; }
+    .domain { font-size: 29px; font-weight: 750; }
+    .funding { font-size: 24px; font-weight: 700; fill: #172033; }
+    .small { font-size: 17px; fill: #344055; }
+  </style>
+
+  <text x="700" y="58" text-anchor="middle" class="sans title">The Relationship between Research and Innovation</text>
+  <text x="700" y="108" text-anchor="middle" class="sans section">Technology Readiness Levels (TRL)</text>
+
+  <g stroke="#ffffff" stroke-width="3" stroke-linejoin="round">
+    <path d="M55 130 H180 L198 170 L180 210 H55 Z" fill="#3f7f2a"/>
+    <path d="M180 130 H323 L341 170 L323 210 H180 L198 170 Z" fill="#55963a"/>
+    <path d="M323 130 H466 L484 170 L466 210 H323 L341 170 Z" fill="#6cae4d"/>
+    <path d="M466 130 H609 L627 170 L609 210 H466 L484 170 Z" fill="#8abb72"/>
+    <path d="M609 130 H752 L770 170 L752 210 H609 L627 170 Z" fill="#abc99d"/>
+    <path d="M752 130 H895 L913 170 L895 210 H752 L770 170 Z" fill="#b9d1ae"/>
+    <path d="M895 130 H1038 L1056 170 L1038 210 H895 L913 170 Z" fill="#8fbd78"/>
+    <path d="M1038 130 H1181 L1199 170 L1181 210 H1038 L1056 170 Z" fill="#6aa948"/>
+    <path d="M1181 130 H1324 L1342 170 L1324 210 H1181 L1199 170 Z" fill="#4d8b31"/>
+  </g>
+
+  <g class="sans trl" text-anchor="middle">
+    <text x="120" y="179">TRL 1</text>
+    <text x="263" y="179">TRL 2</text>
+    <text x="406" y="179">TRL 3</text>
+    <text x="549" y="179">TRL 4</text>
+    <text x="692" y="179">TRL 5</text>
+    <text x="835" y="179">TRL 6</text>
+    <text x="978" y="179">TRL 7</text>
+    <text x="1121" y="179">TRL 8</text>
+    <text x="1264" y="179">TRL 9</text>
+  </g>
+
+  <g class="sans stage" text-anchor="middle">
+    <text x="120" y="244"><tspan x="120">Basic</tspan><tspan x="120" dy="21">research</tspan></text>
+    <text x="263" y="244"><tspan x="263">Technology</tspan><tspan x="263" dy="21">concept</tspan></text>
+    <text x="406" y="244"><tspan x="406">Applied</tspan><tspan x="406" dy="21">research</tspan></text>
+    <text x="549" y="244"><tspan x="549">Laboratory</tspan><tspan x="549" dy="21">prototype</tspan></text>
+    <text x="692" y="244"><tspan x="692">Real-world</tspan><tspan x="692" dy="21">prototype</tspan></text>
+    <text x="835" y="244"><tspan x="835">Prototype</tspan><tspan x="835" dy="21">system</tspan></text>
+    <text x="978" y="244"><tspan x="978">Product</tspan><tspan x="978" dy="21">demonstration</tspan></text>
+    <text x="1121" y="244"><tspan x="1121">First commercial</tspan><tspan x="1121" dy="21">product</tspan></text>
+    <text x="1264" y="244"><tspan x="1264">Full-scale</tspan><tspan x="1264" dy="21">commercial product</tspan></text>
+  </g>
+
+  <g>
+    <path d="M55 345 H1345 L55 500 Z" fill="#ffe49a"/>
+    <path d="M55 500 L1345 360 V500 Z" fill="#d5d9df"/>
+    <text x="92" y="430" class="sans domain" fill="#172033">Academia</text>
+    <text x="1315" y="462" text-anchor="end" class="sans domain" fill="#172033">Industry / Market</text>
+
+    <ellipse cx="360" cy="414" rx="270" ry="93" fill="#ffffff" fill-opacity="0.18" stroke="#11a8df" stroke-width="5"/>
+    <ellipse cx="790" cy="411" rx="275" ry="93" fill="#ffffff" fill-opacity="0.18" stroke="#7132a8" stroke-width="5"/>
+    <text x="360" y="397" text-anchor="middle" class="sans domain" fill="#079fda"><tspan x="360">Research</tspan><tspan x="360" dy="38">methods</tspan></text>
+    <text x="790" y="397" text-anchor="middle" class="sans domain" fill="#7132a8"><tspan x="790">Innovation</tspan><tspan x="790" dy="38">methods</tspan></text>
+  </g>
+
+  <g>
+    <path d="M30 555 H1320 L1380 682 L1320 809 H30 L90 682 Z" fill="#afd493"/>
+    <text x="700" y="590" text-anchor="middle" class="sans small">As uncertainty decreases and technology approaches the market, funding commonly shifts towards private investment.</text>
+
+    <rect x="75" y="615" width="525" height="64" rx="9" fill="#f7c9ab"/>
+    <rect x="335" y="687" width="650" height="64" rx="9" fill="#f7c9ab"/>
+    <rect x="795" y="759" width="530" height="50" rx="9" fill="#f7c9ab"/>
+
+    <text x="337" y="656" text-anchor="middle" class="sans funding">Public research funding</text>
+    <text x="660" y="728" text-anchor="middle" class="sans funding">Public-private partnership funding</text>
+    <text x="1060" y="792" text-anchor="middle" class="sans funding">Venture / private funding</text>
+  </g>
+</svg>
