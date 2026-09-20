@@ -3,7 +3,7 @@
 **Date:** 2026-09-15
 **Week:** 1
 
-## PDF Summary
+## Lesson Summary
 
 This lecture introduces the module and the basic supervised machine learning workflow. It uses movie-review sentiment analysis to show how raw data is converted into numerical features, processed by a predictive model, and evaluated.
 

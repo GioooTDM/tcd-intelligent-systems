@@ -3,7 +3,7 @@
 **Date:** 2026-09-15
 **Week:** 1
 
-## PDF Summary
+## Lesson Summary
 
 This lecture introduces RDF as a W3C-standard model for representing data as a graph. It explains how URIs, namespaces, triples, and RDF serialisation formats make graph data identifiable, interoperable, and machine-processable on the Web.
 

@@ -3,7 +3,7 @@
 **Date:** 2026-09-14
 **Week:** Week 1
 
-## PDF Summary
+## Lesson Summary
 
 This lecture introduces the purpose and scope of Advanced Software Engineering, with an emphasis on applying engineering practices in team-based software development. It frames software engineering as essential for managing the complexity of large-scale systems.
 

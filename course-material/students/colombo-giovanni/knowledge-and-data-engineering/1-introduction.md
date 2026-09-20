@@ -3,7 +3,7 @@
 **Date:** 2026-09-14
 **Week:** Week 1
 
-## PDF Summary
+## Lesson Summary
 
 This lecture introduces the challenges of managing and integrating diverse data at scale, and presents knowledge graphs as a flexible, standards-based approach to representing and connecting data. It establishes the W3C-based ecosystem that will be used throughout the module.
 

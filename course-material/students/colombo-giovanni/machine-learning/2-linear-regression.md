@@ -3,7 +3,7 @@
 **Date:** 2026-09-17  
 **Week:** 1
 
-## PDF Summary
+## Lesson Summary
 
 This lecture introduces linear regression for predicting numerical values. It develops the least-squares cost function, explains how gradient descent minimises it, and extends the model from one feature to multiple features.
 
