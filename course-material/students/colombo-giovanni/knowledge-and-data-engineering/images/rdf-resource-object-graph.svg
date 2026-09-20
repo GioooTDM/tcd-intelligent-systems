@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">RDF graph with a resource object</title>
+  <desc id="desc">The resource The Hobbit is connected by the author predicate to the resource J. R. R. Tolkien.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#25344a"/>
+    </marker>
+    <style>
+      .heading { font: 700 24px system-ui, sans-serif; fill: #172033; }
+      .label { font: 700 22px system-ui, sans-serif; fill: #172033; }
+      .uri { font: 16px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #42526b; }
+      .predicate { font: 700 20px system-ui, sans-serif; fill: #334155; }
+      .kind { font: 16px system-ui, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="420" fill="#ffffff"/>
+  <text x="600" y="45" text-anchor="middle" class="heading">RDF triple with a resource as the object</text>
+
+  <ellipse cx="270" cy="220" rx="225" ry="82" fill="#e8f2ff" stroke="#3973b9" stroke-width="3"/>
+  <text x="270" y="205" text-anchor="middle" class="label">The Hobbit</text>
+  <text x="270" y="238" text-anchor="middle" class="uri">http://example.org/books/the-hobbit</text>
+  <text x="270" y="271" text-anchor="middle" class="kind">resource (subject)</text>
+
+  <line x1="495" y1="220" x2="755" y2="220" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="625" y="165" text-anchor="middle" class="predicate">ex:author</text>
+  <text x="625" y="193" text-anchor="middle" class="uri">http://example.org/vocabulary#author</text>
+
+  <ellipse cx="970" cy="220" rx="185" ry="82" fill="#e9f8ed" stroke="#398a55" stroke-width="3"/>
+  <text x="970" y="205" text-anchor="middle" class="label">J. R. R. Tolkien</text>
+  <text x="970" y="238" text-anchor="middle" class="uri">http://example.org/people/tolkien</text>
+  <text x="970" y="271" text-anchor="middle" class="kind">resource (object)</text>
+
+  <text x="270" y="355" text-anchor="middle" class="kind">subject</text>
+  <text x="625" y="355" text-anchor="middle" class="kind">predicate</text>
+  <text x="970" y="355" text-anchor="middle" class="kind">object</text>
+</svg>

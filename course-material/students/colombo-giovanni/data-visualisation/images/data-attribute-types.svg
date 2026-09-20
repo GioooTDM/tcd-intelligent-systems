@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Data attribute types and forms of ordering</title>
+  <desc id="desc">A summary of categorical, ordinal, and quantitative attributes, followed by sequential, diverging, and cyclic forms of ordering.</desc>
+
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
+      <path d="M 0 0 L 5 2.5 L 0 5 z" fill="#f59e0b"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px Arial, sans-serif; fill: #172033; }
+      .card-title { font: 700 23px Arial, sans-serif; fill: #172033; }
+      .body { font: 18px Arial, sans-serif; fill: #465168; }
+      .label { font: 600 17px Arial, sans-serif; fill: #273247; }
+      .small { font: 16px Arial, sans-serif; fill: #5c667a; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="660" fill="#ffffff"/>
+
+  <text x="60" y="54" class="heading">Attribute types</text>
+
+  <g transform="translate(60 80)">
+    <rect width="330" height="210" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+    <text x="24" y="42" class="card-title">Categorical (nominal)</text>
+    <text x="24" y="72" class="body">Distinct labels with no natural order</text>
+    <rect x="25" y="108" width="76" height="46" rx="23" fill="#2563eb"/>
+    <rect x="126" y="108" width="76" height="46" rx="23" fill="#f59e0b"/>
+    <rect x="227" y="108" width="76" height="46" rx="23" fill="#16a34a"/>
+    <text x="63" y="137" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#ffffff">Italy</text>
+    <text x="164" y="137" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#ffffff">Japan</text>
+    <text x="265" y="137" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#ffffff">Kenya</text>
+    <text x="24" y="188" class="small">Different categories, not ranks</text>
+  </g>
+
+  <g transform="translate(435 80)">
+    <rect width="330" height="210" rx="18" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2"/>
+    <text x="24" y="42" class="card-title">Ordinal</text>
+    <text x="24" y="72" class="body">Categories with a meaningful order</text>
+    <line x1="50" y1="132" x2="280" y2="132" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+    <circle cx="68" cy="132" r="18" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <circle cx="165" cy="132" r="24" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+    <circle cx="262" cy="132" r="30" fill="#7c3aed"/>
+    <text x="68" y="180" text-anchor="middle" class="label">Low</text>
+    <text x="165" y="180" text-anchor="middle" class="label">Medium</text>
+    <text x="262" y="180" text-anchor="middle" class="label">High</text>
+  </g>
+
+  <g transform="translate(810 80)">
+    <rect width="330" height="210" rx="18" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+    <text x="24" y="42" class="card-title">Quantitative</text>
+    <text x="24" y="72" class="body">Numerical magnitudes and differences</text>
+    <line x1="38" y1="152" x2="294" y2="152" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)"/>
+    <line x1="67" y1="143" x2="67" y2="161" stroke="#16a34a" stroke-width="3"/>
+    <line x1="165" y1="143" x2="165" y2="161" stroke="#16a34a" stroke-width="3"/>
+    <line x1="263" y1="143" x2="263" y2="161" stroke="#16a34a" stroke-width="3"/>
+    <text x="67" y="126" text-anchor="middle" class="label">10</text>
+    <text x="165" y="126" text-anchor="middle" class="label">20</text>
+    <text x="263" y="126" text-anchor="middle" class="label">30</text>
+    <text x="24" y="190" class="small">Example: temperature or income</text>
+  </g>
+
+  <line x1="60" y1="330" x2="1140" y2="330" stroke="#d9dee8" stroke-width="2"/>
+  <text x="60" y="382" class="heading">Forms of ordering</text>
+
+  <g transform="translate(60 414)">
+    <text x="165" y="0" text-anchor="middle" class="card-title">Sequential</text>
+    <rect x="20" y="30" width="58" height="58" rx="8" fill="#dbeafe"/>
+    <rect x="78" y="30" width="58" height="58" fill="#93c5fd"/>
+    <rect x="136" y="30" width="58" height="58" fill="#60a5fa"/>
+    <rect x="194" y="30" width="58" height="58" fill="#3b82f6"/>
+    <rect x="252" y="30" width="58" height="58" rx="8" fill="#1d4ed8"/>
+    <text x="20" y="118" class="small">Low</text>
+    <text x="310" y="118" text-anchor="end" class="small">High</text>
+    <line x1="52" y1="140" x2="278" y2="140" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  </g>
+
+  <g transform="translate(435 414)">
+    <text x="165" y="0" text-anchor="middle" class="card-title">Diverging</text>
+    <rect x="20" y="30" width="58" height="58" rx="8" fill="#2563eb"/>
+    <rect x="78" y="30" width="58" height="58" fill="#93c5fd"/>
+    <rect x="136" y="30" width="58" height="58" fill="#f3f4f6"/>
+    <rect x="194" y="30" width="58" height="58" fill="#fca5a5"/>
+    <rect x="252" y="30" width="58" height="58" rx="8" fill="#dc2626"/>
+    <text x="20" y="118" class="small">Below</text>
+    <text x="165" y="118" text-anchor="middle" class="small">Midpoint</text>
+    <text x="310" y="118" text-anchor="end" class="small">Above</text>
+    <line x1="160" y1="140" x2="50" y2="140" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+    <line x1="170" y1="140" x2="280" y2="140" stroke="#dc2626" stroke-width="3" marker-end="url(#arrow-red)"/>
+  </g>
+
+  <g transform="translate(810 414)">
+    <text x="165" y="0" text-anchor="middle" class="card-title">Cyclic</text>
+    <circle cx="165" cy="92" r="58" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <path d="M 165 24 A 68 68 0 1 1 116 45" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow-orange)"/>
+    <line x1="165" y1="38" x2="165" y2="47" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="210" y1="92" x2="219" y2="92" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="165" y1="137" x2="165" y2="146" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="111" y1="92" x2="120" y2="92" stroke="#f59e0b" stroke-width="2"/>
+    <text x="165" y="65" text-anchor="middle" class="small">00:00</text>
+    <text x="193" y="98" text-anchor="middle" class="small">06:00</text>
+    <text x="165" y="128" text-anchor="middle" class="small">12:00</text>
+    <text x="137" y="98" text-anchor="middle" class="small">18:00</text>
+    <text x="165" y="180" text-anchor="middle" class="small">The cycle repeats every 24 hours</text>
+  </g>
+</svg>

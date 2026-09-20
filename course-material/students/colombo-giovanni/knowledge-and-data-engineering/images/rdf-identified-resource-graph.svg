@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">RDF graph using an identified intermediary resource</title>
+  <desc id="desc">Fault1004 is connected to network element ne01, an identified resource with manufacturer Cisco and service type router.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#25344a"/>
+    </marker>
+    <style>
+      .heading { font: 700 26px system-ui, sans-serif; fill: #172033; }
+      .label { font: 700 22px system-ui, sans-serif; fill: #172033; }
+      .predicate { font: 700 17px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #334155; }
+      .kind { font: 16px system-ui, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="1400" height="620" fill="#ffffff"/>
+  <text x="700" y="48" text-anchor="middle" class="heading">Intermediary represented by a resource with a stable URI</text>
+
+  <ellipse cx="190" cy="310" rx="150" ry="78" fill="#e8f2ff" stroke="#3973b9" stroke-width="3"/>
+  <text x="190" y="302" text-anchor="middle" class="label">ff:fault1004</text>
+  <text x="190" y="340" text-anchor="middle" class="kind">identified resource</text>
+
+  <line x1="340" y1="310" x2="510" y2="310" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="425" y="275" text-anchor="middle" class="predicate">ff:fromNetworkElement</text>
+
+  <ellipse cx="700" cy="310" rx="170" ry="92" fill="#e9f8ed" stroke="#398a55" stroke-width="3"/>
+  <text x="700" y="291" text-anchor="middle" class="label">ff:ne01</text>
+  <text x="700" y="326" text-anchor="middle" class="kind">identified resource</text>
+  <text x="700" y="358" text-anchor="middle" class="kind">stable URI derived from the ff namespace</text>
+
+  <line x1="850" y1="270" x2="1035" y2="170" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="935" y="186" text-anchor="middle" class="predicate">ff:manufacturer</text>
+  <rect x="1060" y="105" width="295" height="125" rx="16" fill="#fff4d6" stroke="#c78616" stroke-width="3"/>
+  <text x="1207" y="160" text-anchor="middle" class="label">"Cisco"</text>
+  <text x="1207" y="198" text-anchor="middle" class="kind">literal</text>
+
+  <line x1="850" y1="350" x2="1035" y2="450" stroke="#25344a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="935" y="441" text-anchor="middle" class="predicate">ff:serviceType</text>
+  <rect x="1060" y="390" width="295" height="125" rx="16" fill="#fff4d6" stroke="#c78616" stroke-width="3"/>
+  <text x="1207" y="445" text-anchor="middle" class="label">"router"</text>
+  <text x="1207" y="483" text-anchor="middle" class="kind">literal</text>
+
+  <text x="700" y="572" text-anchor="middle" class="kind">Because ff:ne01 has a URI, other graphs and documents can refer to the same resource.</text>
+</svg>

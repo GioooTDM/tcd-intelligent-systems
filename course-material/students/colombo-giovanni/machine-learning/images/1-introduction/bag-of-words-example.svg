@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title description">
+  <title id="title">Bag-of-words transformation</title>
+  <desc id="description">A review is cleaned by removing stop words and applying stemming. The resulting tokens are counted according to a dictionary to produce a sparse numeric feature vector.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 11 5.5 L 0 11 Z" fill="#536273"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="720" fill="#ffffff"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="800" y="58" text-anchor="middle" fill="#172033" font-size="38" font-weight="700">Bag of words: from text to numbers</text>
+    <text x="800" y="94" text-anchor="middle" fill="#667085" font-size="19">Each dictionary word becomes one feature whose value is its frequency in the review.</text>
+
+    <g fill="none" stroke="#536273" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
+      <path d="M 360 334 L 410 334"/>
+      <path d="M 750 334 L 800 334"/>
+      <path d="M 1100 334 L 1150 334"/>
+    </g>
+
+    <g>
+      <rect x="40" y="135" width="320" height="400" rx="22" fill="#f7f9fc" stroke="#aeb8c7" stroke-width="2.5"/>
+      <circle cx="78" cy="176" r="19" fill="#2563eb"/>
+      <text x="78" y="183" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="700">1</text>
+      <text x="108" y="184" fill="#172033" font-size="25" font-weight="700">Raw review</text>
+      <rect x="68" y="245" width="264" height="205" rx="15" fill="#ffffff" stroke="#d9dee8" stroke-width="2"/>
+      <text x="92" y="288" fill="#344054" font-size="21">
+        <tspan x="92" dy="0">“The terrible ending</tspan>
+        <tspan x="92" dy="34">happened, and terrible</tspan>
+        <tspan x="92" dy="34">events are happening.”</tspan>
+      </text>
+      <text x="200" y="513" text-anchor="middle" fill="#667085" font-size="16">Natural-language input</text>
+    </g>
+
+    <g>
+      <rect x="410" y="135" width="340" height="400" rx="22" fill="#f4f9ef" stroke="#85a966" stroke-width="2.5"/>
+      <circle cx="448" cy="176" r="19" fill="#5f8f3f"/>
+      <text x="448" y="183" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="700">2</text>
+      <text x="478" y="184" fill="#172033" font-size="25" font-weight="700">Preprocess</text>
+
+      <rect x="438" y="220" width="284" height="115" rx="14" fill="#ffffff" stroke="#cdddbf" stroke-width="2"/>
+      <text x="458" y="250" fill="#476632" font-size="17" font-weight="700">Remove stop words</text>
+      <text x="458" y="280" fill="#344054" font-size="16">
+        <tspan x="458" dy="0">terrible ending happened</tspan>
+        <tspan x="458" dy="25">terrible events happening</tspan>
+      </text>
+
+      <rect x="438" y="360" width="284" height="125" rx="14" fill="#ffffff" stroke="#cdddbf" stroke-width="2"/>
+      <text x="458" y="390" fill="#476632" font-size="17" font-weight="700">Apply stemming</text>
+      <text x="458" y="420" fill="#344054" font-size="16">
+        <tspan x="458" dy="0">terrible end happen</tspan>
+        <tspan x="458" dy="25">terrible event happen</tspan>
+      </text>
+      <text x="580" y="513" text-anchor="middle" fill="#667085" font-size="16">Clean and normalise tokens</text>
+    </g>
+
+    <g>
+      <rect x="800" y="135" width="300" height="400" rx="22" fill="#f7f9fc" stroke="#aeb8c7" stroke-width="2.5"/>
+      <circle cx="838" cy="176" r="19" fill="#2563eb"/>
+      <text x="838" y="183" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="700">3</text>
+      <text x="868" y="184" fill="#172033" font-size="25" font-weight="700">Dictionary</text>
+
+      <rect x="828" y="239" width="244" height="220" rx="14" fill="#ffffff" stroke="#d9dee8" stroke-width="2"/>
+      <g fill="#667085" font-size="16" font-weight="700">
+        <text x="852" y="270">Index</text>
+        <text x="940" y="270">Word</text>
+      </g>
+      <line x1="846" y1="282" x2="1054" y2="282" stroke="#d9dee8" stroke-width="2"/>
+      <g fill="#344054" font-size="18">
+        <text x="866" y="315">0</text><text x="940" y="315">terrible</text>
+        <text x="866" y="348">1</text><text x="940" y="348">end</text>
+        <text x="866" y="381">2</text><text x="940" y="381">happen</text>
+        <text x="866" y="414">3</text><text x="940" y="414">event</text>
+        <text x="866" y="447">4</text><text x="940" y="447">great</text>
+      </g>
+      <text x="950" y="513" text-anchor="middle" fill="#667085" font-size="16">N = 5 features</text>
+    </g>
+
+    <g>
+      <rect x="1150" y="135" width="410" height="400" rx="22" fill="#fff8ed" stroke="#e7a84d" stroke-width="2.5"/>
+      <circle cx="1188" cy="176" r="19" fill="#d97706"/>
+      <text x="1188" y="183" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="700">4</text>
+      <text x="1218" y="184" fill="#172033" font-size="25" font-weight="700">Feature vector</text>
+
+      <text x="1355" y="244" text-anchor="middle" fill="#344054" font-size="25" font-weight="700">x = [ 2, 1, 2, 1, 0 ]</text>
+
+      <g>
+        <rect x="1190" y="285" width="66" height="72" fill="#ffffff" stroke="#d9dee8" stroke-width="2"/>
+        <rect x="1256" y="285" width="66" height="72" fill="#ffffff" stroke="#d9dee8" stroke-width="2"/>
+        <rect x="1322" y="285" width="66" height="72" fill="#ffffff" stroke="#d9dee8" stroke-width="2"/>
+        <rect x="1388" y="285" width="66" height="72" fill="#ffffff" stroke="#d9dee8" stroke-width="2"/>
+        <rect x="1454" y="285" width="66" height="72" fill="#fff1dc" stroke="#e7a84d" stroke-width="2"/>
+        <g fill="#172033" font-size="28" font-weight="700" text-anchor="middle">
+          <text x="1223" y="330">2</text><text x="1289" y="330">1</text>
+          <text x="1355" y="330">2</text><text x="1421" y="330">1</text>
+          <text x="1487" y="330">0</text>
+        </g>
+      </g>
+
+      <g fill="#667085" font-size="13" text-anchor="middle">
+        <text x="1223" y="381">terrible</text>
+        <text x="1289" y="381">end</text>
+        <text x="1355" y="381">happen</text>
+        <text x="1421" y="381">event</text>
+        <text x="1487" y="381">great</text>
+      </g>
+
+      <rect x="1190" y="414" width="330" height="68" rx="12" fill="#ffffff" stroke="#f0cf9f" stroke-width="2"/>
+      <text x="1355" y="442" text-anchor="middle" fill="#9a5b08" font-size="17" font-weight="700">Sparse representation</text>
+      <text x="1355" y="466" text-anchor="middle" fill="#667085" font-size="15">“great” is absent, so its value is 0.</text>
+      <text x="1355" y="513" text-anchor="middle" fill="#667085" font-size="16">Numeric input for the model</text>
+    </g>
+
+    <rect x="410" y="600" width="780" height="67" rx="18" fill="#f5f7fb" stroke="#d9dee8" stroke-width="2"/>
+    <text x="800" y="641" text-anchor="middle" fill="#344054" font-size="20" font-weight="650">The vector keeps word counts, but discards the original word order.</text>
+  </g>
+</svg>
