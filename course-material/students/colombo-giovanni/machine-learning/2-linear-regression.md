@@ -25,7 +25,7 @@ Regression is used when the target is a numerical value. Example tasks include p
 - tomorrow's temperature from forecasts and previous measurements;
 - the distance between mobile devices from Bluetooth signal strength and contextual information.
 
-![Examples of regression tasks showing multiple input features used to predict a numerical house price, annual income, temperature, or device distance.](images/regression-examples-v2.png)
+![Examples of regression tasks showing multiple input features used to predict a numerical house price, annual income, temperature, or device distance.](images/2-linear-regression/regression-examples-v2.png)
 
 ## Running Example: Advertising Data
 
@@ -39,9 +39,9 @@ The lecture uses the [Advertising dataset](https://www.statlearning.com/s/Advert
 
 A first task is to predict sales using only the TV advertising budget. A scatter plot suggests fitting a line through the observations and using it to predict sales in a new market or for an unseen advertising budget.
 
-![Scatter plot of sales against TV advertising budget for the 200 observations in the Advertising dataset.](images/advertising-tv-sales-scatter.svg)
+![Scatter plot of sales against TV advertising budget for the 200 observations in the Advertising dataset.](images/2-linear-regression/advertising-tv-sales-scatter.svg)
 
-The plot can be regenerated with [`plot_advertising_data.py`](scripts/plot_advertising_data.py).
+The plot can be regenerated with [`plot_advertising_data.py`](scripts/2-linear-regression/plot_advertising_data.py).
 
 ## Notation
 
@@ -83,9 +83,9 @@ where:
 
 Different parameter values produce different lines. Training the model means finding values of \(\theta_0\) and \(\theta_1\) that fit the training observations well.
 
-![Three models fitted over the advertising data, showing how different intercept and slope values change the regression line.](images/linear-model-parameter-examples.svg)
+![Three models fitted over the advertising data, showing how different intercept and slope values change the regression line.](images/2-linear-regression/linear-model-parameter-examples.svg)
 
-In these examples, setting \(\theta_1 = 0\) produces a horizontal line. Increasing \(\theta_0\) moves the line upwards, while a positive \(\theta_1\) makes it rise as \(x\) increases. The figure can be regenerated with [`plot_linear_model_parameters.py`](scripts/plot_linear_model_parameters.py).
+In these examples, setting \(\theta_1 = 0\) produces a horizontal line. Increasing \(\theta_0\) moves the line upwards, while a positive \(\theta_1\) makes it rise as \(x\) increases. The figure can be regenerated with [`plot_linear_model_parameters.py`](scripts/2-linear-regression/plot_linear_model_parameters.py).
 
 ## How to choose model parameters \(\theta\)?
 
@@ -93,7 +93,7 @@ Each choice of \(\theta_0\) and \(\theta_1\) produces a different line. To choos
 
 The idea is to choose \(\theta_0\) and \(\theta_1\) so that the prediction \(h_\theta(x^{(i)})\) is close to the observed value \(y^{(i)}\) for every training example. In the graph, this difference is the vertical gap between a data point and the line. Smaller gaps indicate better predictions.
 
-![A regression line over the advertising data with vertical gaps showing the prediction errors for selected training examples.](images/least-squares-cost-idea.svg)
+![A regression line over the advertising data with vertical gaps showing the prediction errors for selected training examples.](images/2-linear-regression/least-squares-cost-idea.svg)
 
 In the **least-squares** approach, each prediction error is squared and the squared errors are averaged over all \(m\) training examples:
 
@@ -119,7 +119,7 @@ J(\theta_0, \theta_1)
 = \frac{1}{m}\sum_{i=1}^{m}l_i(\theta_0, \theta_1)
 $$
 
-The figure can be regenerated with [`plot_least_squares_idea.py`](scripts/plot_least_squares_idea.py).
+The figure can be regenerated with [`plot_least_squares_idea.py`](scripts/2-linear-regression/plot_least_squares_idea.py).
 
 > Absolute errors could also be used, but they are less convenient for derivative-based optimisation. If \(e\) is the prediction error, the derivative of \(|e|\) is \(-1\) for \(e<0\), \(1\) for \(e>0\), and is undefined at \(e=0\). In contrast, the derivative of \(e^2\) is \(2e\), which is defined and continuous everywhere. The squared-error cost is therefore smoother and easier to minimise using gradient-based methods.
 
@@ -147,7 +147,7 @@ $$
 
 **Question:** What value of \(\theta_1\) minimises \(J(\theta_1)\)?
 
-![The cost function and its derivative, with the minimum of the cost and the zero of the derivative both occurring at theta one equal to five thirteenths.](images/small-example-cost-function.svg)
+![The cost function and its derivative, with the minimum of the cost and the zero of the derivative both occurring at theta one equal to five thirteenths.](images/2-linear-regression/small-example-cost-function.svg)
 
 The left graph suggests that the minimum is near \(\theta_1=0.4\). To find its exact position, let \(f(\theta_1)=J(\theta_1)\) and calculate its derivative. The derivative \(f'(\theta_1)\), shown on the right, gives the slope of the cost curve. At the bottom of this smooth parabola, the tangent is horizontal, so its slope is zero: \(f'(\theta_1)=0\).
 
@@ -171,7 +171,7 @@ $$
 
 Because \(f\) is a convex parabola, this stationary point is its unique global minimum.
 
-The graph can be regenerated with [`plot_small_cost_example.py`](scripts/plot_small_cost_example.py).
+The graph can be regenerated with [`plot_small_cost_example.py`](scripts/2-linear-regression/plot_small_cost_example.py).
 
 ## Residuals and Model Assessment
 
@@ -183,7 +183,7 @@ $$
 
 Geometrically, the residual is the signed vertical distance between an observed point and the model's prediction. A positive residual means that the observed value is above the prediction; a negative residual means that it is below the prediction. A residual near zero indicates a close prediction.
 
-![A residual shown as the vertical gap between an observation and a prediction, followed by residual plots with random scatter and a curved pattern.](images/residual-diagnostics.svg)
+![A residual shown as the vertical gap between an observation and a prediction, followed by residual plots with random scatter and a curved pattern.](images/2-linear-regression/residual-diagnostics.svg)
 
 A residual plot helps assess whether the model is suitable:
 
@@ -191,7 +191,7 @@ A residual plot helps assess whether the model is suitable:
 - visible structure may indicate that a straight line does not capture an important relationship;
 - residual variation can also help estimate uncertainty around predictions.
 
-The figure can be regenerated with [`plot_residual_diagnostics.py`](scripts/plot_residual_diagnostics.py).
+The figure can be regenerated with [`plot_residual_diagnostics.py`](scripts/2-linear-regression/plot_residual_diagnostics.py).
 
 ## Gradient Descent
 
@@ -199,17 +199,17 @@ Brute-force search over every possible pair \((\theta_0, \theta_1)\) is ineffici
 
 For a convex, bowl-shaped cost function, gradient descent can reach the global minimum. For a non-convex function with several minima, it may instead converge to a local minimum.
 
-![Gradient-descent steps moving towards the global minimum of a convex cost function and towards a local minimum of a non-convex function.](images/gradient-descent-convex-nonconvex.svg)
+![Gradient-descent steps moving towards the global minimum of a convex cost function and towards a local minimum of a non-convex function.](images/2-linear-regression/gradient-descent-convex-nonconvex.svg)
 
 Each orange arrow represents one parameter update in the direction opposite to the slope. With a suitable learning rate, the cost decreases at each step. In the non-convex example, the final minimum depends on the starting point.
 
 When the model has two parameters, the cost is written as \(J(\theta_0,\theta_1)\) and can be visualised as a 3D surface. The horizontal axes represent the two parameter values, while the vertical axis represents the resulting cost. Each path below shows how both parameters change together during gradient descent.
 
-![Three-dimensional gradient-descent paths on a convex least-squares surface and on a generic non-convex surface.](images/gradient-descent-3d.svg)
+![Three-dimensional gradient-descent paths on a convex least-squares surface and on a generic non-convex surface.](images/2-linear-regression/gradient-descent-3d.svg)
 
 The least-squares cost for linear regression is convex, so its surface has one global minimum. The non-convex surface is a generic comparison rather than the cost function of this linear-regression model; different starting points can lead to different valleys.
 
-The figures can be regenerated with [`plot_gradient_descent.py`](scripts/plot_gradient_descent.py) and [`plot_gradient_descent_3d.py`](scripts/plot_gradient_descent_3d.py).
+The figures can be regenerated with [`plot_gradient_descent.py`](scripts/2-linear-regression/plot_gradient_descent.py) and [`plot_gradient_descent_3d.py`](scripts/2-linear-regression/plot_gradient_descent_3d.py).
 
 ## Derivatives and Gradients
 
@@ -229,7 +229,7 @@ $$
 
 For example, if \(f(x)=x^2\) and \(a=1\), then \(f'(1)=2\). The tangent-line approximation is therefore \(f(x)\approx1+2(x-1)\).
 
-![The curve f of x equals x squared and its tangent line at x equals one, whose slope is f prime of one equals two.](images/derivative-tangent-line.svg)
+![The curve f of x equals x squared and its tangent line at x equals one, whose slope is f prime of one equals two.](images/2-linear-regression/derivative-tangent-line.svg)
 
 ### 2. From a Tangent Line to a Tangent Plane
 
@@ -246,7 +246,7 @@ $$
 
 A function \(f(\mathbf{x})=f(x_1,x_2)\) assigns one output to every pair \((x_1,x_2)\). Its graph is therefore a surface in 3D: the horizontal axes are \(x_1\) and \(x_2\), and the height is \(f(x_1,x_2)\). The equivalent of the tangent line is now a **tangent plane**.
 
-![The surface f of x one and x two equals x one squared plus x two squared, with its tangent plane at the point one comma one.](images/gradient-tangent-plane.svg)
+![The surface f of x one and x two equals x one squared plus x two squared, with its tangent plane at the point one comma one.](images/2-linear-regression/gradient-tangent-plane.svg)
 
 ### 3. Partial Derivatives and the Gradient
 
@@ -303,7 +303,7 @@ $$
 
 The gradient \(\nabla f\) points in the direction of the steepest local increase of the function. The opposite direction, \(-\nabla f\), gives the steepest local decrease. Gradient descent therefore subtracts a scaled gradient from the current parameters to reduce the cost.
 
-The figures can be regenerated with [`plot_derivatives_and_gradients.py`](scripts/plot_derivatives_and_gradients.py).
+The figures can be regenerated with [`plot_derivatives_and_gradients.py`](scripts/2-linear-regression/plot_derivatives_and_gradients.py).
 
 ## Gradient Descent for Simple Linear Regression
 
@@ -388,9 +388,9 @@ which maps the observed range to approximately \([0,1]\). The constant intercept
 
 The following example applies both methods independently to the `age` and `income` features of seven people. `Person` is only an observation label and is not normalised.
 
-![Three tables comparing the original age and income data for seven people with z-score standardisation and min-max scaling.](images/feature-normalisation-example.svg)
+![Three tables comparing the original age and income data for seven people with z-score standardisation and min-max scaling.](images/2-linear-regression/feature-normalisation-example.svg)
 
-The figure can be regenerated with [`plot_feature_normalisation_tables.py`](scripts/plot_feature_normalisation_tables.py).
+The figure can be regenerated with [`plot_feature_normalisation_tables.py`](scripts/2-linear-regression/plot_feature_normalisation_tables.py).
 
 **Which method should be used?**
 
@@ -413,15 +413,15 @@ The cost \(J(\theta)\) should decrease after every correctly configured gradient
 - The value should be adjusted so that the cost decreases in a reasonable number of iterations.
 - Automated methods such as **line search** test several candidate step sizes at each iteration and select one that sufficiently decreases the cost.
 
-![Cost against iteration showing a stopping point when improvements become negligible, and the effects of learning rates that are too small, suitable, or too large.](images/gradient-descent-training-diagnostics.svg)
+![Cost against iteration showing a stopping point when improvements become negligible, and the effects of learning rates that are too small, suitable, or too large.](images/2-linear-regression/gradient-descent-training-diagnostics.svg)
 
-The left panel shows a typical cost curve used for a stopping decision; its exact shape depends on the data and optimiser. The right panel shows how the learning rate affects convergence. The figure can be regenerated with [`plot_training_diagnostics.py`](scripts/plot_training_diagnostics.py).
+The left panel shows a typical cost curve used for a stopping decision; its exact shape depends on the data and optimiser. The right panel shows how the learning rate affects convergence. The figure can be regenerated with [`plot_training_diagnostics.py`](scripts/2-linear-regression/plot_training_diagnostics.py).
 
 The same behaviour can be viewed directly in parameter space. Each arrow below represents one update \(\theta\leftarrow\theta-\alpha J'(\theta)\). A small \(\alpha\) produces short steps, a suitable \(\alpha\) may cross the minimum while still converging, and an excessively large \(\alpha\) produces growing oscillations.
 
-![Gradient-descent steps on a quadratic cost function for a learning rate that is small, suitable, or too large.](images/learning-rate-parameter-steps.svg)
+![Gradient-descent steps on a quadratic cost function for a learning rate that is small, suitable, or too large.](images/2-linear-regression/learning-rate-parameter-steps.svg)
 
-The figure can be regenerated with [`plot_learning_rate_parameter_steps.py`](scripts/plot_learning_rate_parameter_steps.py).
+The figure can be regenerated with [`plot_learning_rate_parameter_steps.py`](scripts/2-linear-regression/plot_learning_rate_parameter_steps.py).
 
 ## Presenting Plots
 
@@ -527,7 +527,7 @@ As in the one-feature case, all updates in one iteration should use the same pre
 
 The Advertising dataset provides a concrete example of predicting sales from two features at the same time: TV and radio advertising budgets. The same observations can be fitted with models of different complexity.
 
-![The Advertising observations plotted against TV and radio budgets, with a fitted linear plane and a fitted quadratic surface.](images/advertising-linear-quadratic-surfaces.svg)
+![The Advertising observations plotted against TV and radio budgets, with a fitted linear plane and a fitted quadratic surface.](images/2-linear-regression/advertising-linear-quadratic-surfaces.svg)
 
 The left model uses only linear TV and radio terms, so its predictions form a plane. The right model also includes squared terms and a TV-radio interaction, allowing the fitted surface to curve. A more flexible surface may fit the training observations more closely, but its performance should still be evaluated on unseen data.
 
@@ -539,4 +539,4 @@ The left model uses only linear TV and radio terms, so its predictions form a pl
 
 These questions illustrate that choosing a useful model involves inspecting the data and checking whether the residuals or fitted surface reveal structure that a simple linear model misses.
 
-The figure can be regenerated with [`plot_advertising_surfaces.py`](scripts/plot_advertising_surfaces.py).
+The figure can be regenerated with [`plot_advertising_surfaces.py`](scripts/2-linear-regression/plot_advertising_surfaces.py).

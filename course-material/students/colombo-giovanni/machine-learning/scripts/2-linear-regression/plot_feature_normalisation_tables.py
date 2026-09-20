@@ -9,8 +9,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-MODULE_DIR = Path(__file__).resolve().parents[1]
-OUTPUT_FILE = MODULE_DIR / "images" / "feature-normalisation-example.svg"
+MODULE_DIR = Path(__file__).resolve().parents[2]
+OUTPUT_FILE = MODULE_DIR / "images" / "2-linear-regression" / "feature-normalisation-example.svg"
 
 
 people = [f"Person {i}" for i in range(1, 8)]

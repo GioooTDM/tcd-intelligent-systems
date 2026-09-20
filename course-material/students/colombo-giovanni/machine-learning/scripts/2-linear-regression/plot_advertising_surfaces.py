@@ -10,9 +10,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-MODULE_DIR = Path(__file__).resolve().parents[1]
+MODULE_DIR = Path(__file__).resolve().parents[2]
 DATA_FILE = MODULE_DIR / "data" / "advertising.csv"
-OUTPUT_FILE = MODULE_DIR / "images" / "advertising-linear-quadratic-surfaces.svg"
+OUTPUT_FILE = MODULE_DIR / "images" / "2-linear-regression" / "advertising-linear-quadratic-surfaces.svg"
 
 
 with DATA_FILE.open(newline="", encoding="utf-8") as file:

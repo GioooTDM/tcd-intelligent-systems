@@ -9,9 +9,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-MODULE_DIR = Path(__file__).resolve().parents[1]
-DATA_FILE = MODULE_DIR / "data" / "Advertising.csv"
-OUTPUT_FILE = MODULE_DIR / "images" / "linear-model-parameter-examples.svg"
+MODULE_DIR = Path(__file__).resolve().parents[2]
+DATA_FILE = MODULE_DIR / "data" / "advertising.csv"
+OUTPUT_FILE = MODULE_DIR / "images" / "2-linear-regression" / "linear-model-parameter-examples.svg"
 
 
 with DATA_FILE.open(newline="", encoding="utf-8") as file:

@@ -9,9 +9,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-MODULE_DIR = Path(__file__).resolve().parents[1]
-DERIVATIVE_OUTPUT_FILE = MODULE_DIR / "images" / "derivative-tangent-line.svg"
-PLANE_OUTPUT_FILE = MODULE_DIR / "images" / "gradient-tangent-plane.svg"
+MODULE_DIR = Path(__file__).resolve().parents[2]
+DERIVATIVE_OUTPUT_FILE = MODULE_DIR / "images" / "2-linear-regression" / "derivative-tangent-line.svg"
+PLANE_OUTPUT_FILE = MODULE_DIR / "images" / "2-linear-regression" / "gradient-tangent-plane.svg"
 
 
 # One input: the derivative is the slope of the tangent line.

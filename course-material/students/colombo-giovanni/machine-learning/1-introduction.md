@@ -55,7 +55,7 @@ Two important supervised-learning tasks are:
 - **Classification:** predicts one of a set of discrete classes. For example, a credit-card transaction may be classified as `fraudulent` or `not fraudulent`.
 - **Regression:** predicts a continuous numerical value. For example, Bluetooth signal strength might be used to estimate the distance between two people.
 
-![Machine learning divided into supervised and unsupervised learning, with supervised learning divided into classification and regression.](images/machine-learning-types.svg)
+![Machine learning divided into supervised and unsupervised learning, with supervised learning divided into classification and regression.](images/1-introduction/machine-learning-types.svg)
 
 ## Classification Example
 
@@ -74,7 +74,7 @@ Building a classifier therefore requires two main steps:
 1. map the real input, such as an image or text, to a numeric feature vector \(x\);
 2. learn the prediction function \(h(x)\) from labelled data.
 
-![Example of a labelled training set in which fruit input samples x are associated with their target labels y.](images/training-set-example.png)
+![Example of a labelled training set in which fruit input samples x are associated with their target labels y.](images/1-introduction/training-set-example.png)
 
 ## Training Data
 
@@ -95,7 +95,7 @@ Human labelling can be repetitive, error-prone, and poorly paid. Logged outcomes
 - **Missing relationships:** the collected data may not capture the useful factors needed for prediction.
 - **Correlation vs causation:** a statistical association does not by itself establish that one variable caused another.
 
-![Arcade revenue and the number of computer science doctorates awarded in the United States follow a similar trend from 2000 to 2009, despite there being no evidence that either caused the other.](images/correlation-vs-causation-arcades-phds.svg)
+![Arcade revenue and the number of computer science doctorates awarded in the United States follow a similar trend from 2000 to 2009, despite there being no evidence that either caused the other.](images/1-introduction/correlation-vs-causation-arcades-phds.svg)
 
 This real dataset has a Pearson correlation of approximately `r = 0.985`, but the similar trends do not establish a causal relationship. The values are published in [PLOS ONE, Table 1](https://doi.org/10.1371/journal.pone.0326090.t001); the original data sources are identified as the U.S. Census Bureau and the National Science Foundation, as also reported in [Stanford CS109 course material](https://web.stanford.edu/class/archive/cs/cs109/cs109.1208/lectures/13_joint_statistics.pdf).
 
@@ -111,7 +111,7 @@ Data preparation
     → use it in a business application
 ```
 
-![Machine learning workflow showing data preparation, feature selection, and an iterative cycle of model selection, training, and testing before use in a business application. Real-world feedback can restart data preparation.](images/machine-learning-workflow.svg)
+![Machine learning workflow showing data preparation, feature selection, and an iterative cycle of model selection, training, and testing before use in a business application. Real-world feedback can restart data preparation.](images/1-introduction/machine-learning-workflow.svg)
 
 Model selection, training, and testing may be repeated iteratively. The lecture emphasises that data preparation often requires most of the effort, while the value of the system ultimately depends on its real-world application.
 
@@ -142,7 +142,7 @@ For example, if `terrible` occurs twice in a review, the entry corresponding to 
 
 This conversion from raw text to numerical values is an example of **feature engineering**.
 
-![Bag-of-words example showing a raw review transformed through stop-word removal and stemming into a dictionary and a sparse numeric feature vector of word counts.](images/bag-of-words-example.svg)
+![Bag-of-words example showing a raw review transformed through stop-word removal and stemming into a dictionary and a sparse numeric feature vector of word counts.](images/1-introduction/bag-of-words-example.svg)
 
 ## Linear Algebra Notation
 

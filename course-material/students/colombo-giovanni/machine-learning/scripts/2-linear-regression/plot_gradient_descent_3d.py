@@ -9,8 +9,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-MODULE_DIR = Path(__file__).resolve().parents[1]
-OUTPUT_FILE = MODULE_DIR / "images" / "gradient-descent-3d.svg"
+MODULE_DIR = Path(__file__).resolve().parents[2]
+OUTPUT_FILE = MODULE_DIR / "images" / "2-linear-regression" / "gradient-descent-3d.svg"
 
 
 def follow_gradient(start, gradient, learning_rate, steps):

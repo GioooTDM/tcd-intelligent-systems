@@ -10,8 +10,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-MODULE_DIR = Path(__file__).resolve().parents[1]
-OUTPUT_FILE = MODULE_DIR / "images" / "residual-diagnostics.svg"
+MODULE_DIR = Path(__file__).resolve().parents[2]
+OUTPUT_FILE = MODULE_DIR / "images" / "2-linear-regression" / "residual-diagnostics.svg"
 
 
 fig, axes = plt.subplots(1, 3, figsize=(12, 4))
