@@ -39,6 +39,8 @@ The lecture uses the [Advertising dataset](https://www.statlearning.com/s/Advert
 
 A first task is to predict sales using only the TV advertising budget. A scatter plot suggests fitting a line through the observations and using it to predict sales in a new market or for an unseen advertising budget.
 
+> Plotting the data before choosing a model can reveal whether the relationship appears linear or has a more complex structure.
+
 ![Scatter plot of sales against TV advertising budget for the 200 observations in the Advertising dataset.](images/2-linear-regression/advertising-tv-sales-scatter.svg)
 
 The plot can be regenerated with [`plot_advertising_data.py`](scripts/2-linear-regression/plot_advertising_data.py).
@@ -352,6 +354,8 @@ Both new parameter values should be calculated from the same old parameter value
 ### Feature Normalisation
 
 Features with very different numerical ranges can cause numerical problems and make large-valued features dominate the optimisation. Normalisation rescales features to comparable ranges and often makes gradient descent converge more efficiently.
+
+The target variable \(y\) can also be normalised when its numerical range is very large.
 
 Without normalisation, linear regression can still represent the same relationship, but gradient descent may converge much more slowly.
 
