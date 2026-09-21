@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="580" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
+  <title id="title">RDFS classes, instances, and subclass inference</title>
+  <desc id="desc">Tornado is an instance of Horse, Horse is a subclass of Animal, and both Horse and Animal are RDFS classes. Therefore, an RDFS reasoner infers that Tornado is also an instance of Animal.</desc>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#ea580c"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px Arial, sans-serif; fill: #172033; }
+      .node { font: 700 21px Arial, sans-serif; fill: #172033; }
+      .edge { font: 600 18px Arial, sans-serif; fill: #334155; }
+      .inferred { font: 700 18px Arial, sans-serif; fill: #c2410c; }
+      .legend { font: 17px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="580" fill="#ffffff"/>
+  <text x="600" y="44" text-anchor="middle" class="heading">Classes, instances, and subclass inference</text>
+  <rect x="45" y="70" width="1110" height="455" rx="22" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Nodes -->
+  <rect x="70" y="255" width="210" height="76" rx="38" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="175" y="300" text-anchor="middle" class="node">ex:tornado</text>
+
+  <rect x="455" y="255" width="210" height="76" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="560" y="300" text-anchor="middle" class="node">ex:Horse</text>
+
+  <rect x="850" y="255" width="220" height="76" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="960" y="300" text-anchor="middle" class="node">ex:Animal</text>
+
+  <rect x="620" y="100" width="240" height="68" rx="16" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="740" y="141" text-anchor="middle" class="node">rdfs:Class</text>
+
+  <!-- tornado rdf:type Horse -->
+  <line x1="280" y1="293" x2="445" y2="293" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <rect x="320" y="249" width="90" height="35" rx="10" fill="#ffffff"/>
+  <text x="365" y="273" text-anchor="middle" class="edge">rdf:type</text>
+
+  <!-- Horse rdfs:subClassOf Animal -->
+  <line x1="665" y1="293" x2="840" y2="293" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <rect x="681" y="249" width="145" height="35" rx="10" fill="#ffffff"/>
+  <text x="753" y="273" text-anchor="middle" class="edge">rdfs:subClassOf</text>
+
+  <!-- Class declarations -->
+  <path d="M 560 255 C 560 205, 625 180, 690 168" fill="none" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+  <rect x="546" y="188" width="90" height="34" rx="10" fill="#ffffff"/>
+  <text x="591" y="211" text-anchor="middle" class="edge">rdf:type</text>
+
+  <path d="M 960 255 C 960 205, 895 180, 790 168" fill="none" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+  <rect x="866" y="188" width="90" height="34" rx="10" fill="#ffffff"/>
+  <text x="911" y="211" text-anchor="middle" class="edge">rdf:type</text>
+
+  <!-- Inferred tornado rdf:type Animal -->
+  <path d="M 175 331 C 250 465, 850 465, 960 331" fill="none" stroke="#ea580c" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-orange)"/>
+  <rect x="482" y="407" width="238" height="42" rx="11" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="601" y="434" text-anchor="middle" class="inferred">rdf:type — inferred</text>
+
+  <!-- Legend -->
+  <line x1="355" y1="500" x2="425" y2="500" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <text x="440" y="506" class="legend">stated triple</text>
+  <line x1="630" y1="500" x2="700" y2="500" stroke="#ea580c" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-orange)"/>
+  <text x="715" y="506" class="legend">inferred triple</text>
+</svg>

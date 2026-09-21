@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Complete RDF graph with a description of the hasAuthor property</title>
+  <desc id="desc">The graph states that book1 has author Alice, Alice is a Person, hasAuthor is an RDF Property, and hasAuthor has a textual description.</desc>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px Arial, sans-serif; fill: #172033; }
+      .node { font: 700 21px Arial, sans-serif; fill: #172033; }
+      .literal { font: 600 19px Arial, sans-serif; fill: #172033; }
+      .edge { font: 600 19px Arial, sans-serif; fill: #334155; }
+      .guide { font: 16px Arial, sans-serif; fill: #6d28d9; }
+      .note-title { font: 700 19px Arial, sans-serif; fill: #172033; }
+      .note { font: 17px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text x="600" y="44" text-anchor="middle" class="heading">Adding information about an RDF property</text>
+
+  <rect x="40" y="70" width="1120" height="560" rx="22" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- book1 hasAuthor alice -->
+  <rect x="85" y="185" width="225" height="76" rx="38" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="197" y="230" text-anchor="middle" class="node">ex:book1</text>
+
+  <line x1="310" y1="223" x2="755" y2="223" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <rect x="410" y="178" width="250" height="44" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="535" y="207" text-anchor="middle" class="edge">ex:hasAuthor</text>
+
+  <rect x="765" y="185" width="250" height="76" rx="38" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <text x="890" y="230" text-anchor="middle" class="node">ex:alice</text>
+
+  <!-- alice rdf:type Person -->
+  <line x1="890" y1="185" x2="890" y2="129" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <text x="928" y="162" class="edge">rdf:type</text>
+  <rect x="795" y="87" width="190" height="48" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="890" y="118" text-anchor="middle" class="node">ex:Person</text>
+
+  <!-- hasAuthor as a resource -->
+  <rect x="110" y="420" width="260" height="72" rx="36" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="240" y="463" text-anchor="middle" class="node">ex:hasAuthor</text>
+
+  <!-- hasAuthor rdf:type rdf:Property -->
+  <line x1="370" y1="445" x2="680" y2="390" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+  <rect x="455" y="386" width="150" height="36" rx="10" fill="#ffffff"/>
+  <text x="530" y="411" text-anchor="middle" class="edge">rdf:type</text>
+  <rect x="690" y="350" width="235" height="72" rx="14" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <text x="807" y="393" text-anchor="middle" class="node">rdf:Property</text>
+
+  <!-- hasAuthor ex:description literal -->
+  <line x1="370" y1="469" x2="680" y2="515" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <rect x="430" y="477" width="200" height="36" rx="10" fill="#ffffff"/>
+  <text x="530" y="502" text-anchor="middle" class="edge">ex:description</text>
+  <rect x="690" y="480" width="405" height="72" rx="14" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="892" y="523" text-anchor="middle" class="literal">"Connects a book to its author."</text>
+
+  <!-- Visual identity guide, not an RDF edge -->
+  <path d="M 535 224 C 535 300, 240 320, 240 420" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="7 7"/>
+  <rect x="270" y="306" width="250" height="38" rx="10" fill="#ffffff" stroke="#c4b5fd"/>
+  <text x="395" y="330" text-anchor="middle" class="guide">same URI - visual guide, not a triple</text>
+
+  <rect x="70" y="578" width="1060" height="36" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="90" y="602" class="note-title">Four statements:</text>
+  <text x="245" y="602" class="note">book1 has author Alice; Alice is a Person; hasAuthor is a property and has a description.</text>
+</svg>

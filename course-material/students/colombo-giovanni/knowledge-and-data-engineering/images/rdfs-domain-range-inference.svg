@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Type inference from RDFS domain and range</title>
+  <desc id="desc">The property hasTeacher has domain Course and range Teacher. When CS101 hasTeacher Alice is stated, an RDFS reasoner infers that CS101 is a Course and Alice is a Teacher.</desc>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#ea580c"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px Arial, sans-serif; fill: #172033; }
+      .node { font: 700 21px Arial, sans-serif; fill: #172033; }
+      .edge { font: 600 18px Arial, sans-serif; fill: #334155; }
+      .inferred { font: 700 17px Arial, sans-serif; fill: #c2410c; }
+      .guide { font: 16px Arial, sans-serif; fill: #6d28d9; }
+      .legend { font: 17px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="650" fill="#ffffff"/>
+  <text x="600" y="44" text-anchor="middle" class="heading">Domain and range produce type inferences</text>
+  <rect x="45" y="70" width="1110" height="530" rx="22" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Class nodes -->
+  <rect x="125" y="105" width="230" height="72" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="240" y="148" text-anchor="middle" class="node">ex:Course</text>
+
+  <rect x="845" y="105" width="230" height="72" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="960" y="148" text-anchor="middle" class="node">ex:Teacher</text>
+
+  <!-- Property as a resource -->
+  <rect x="470" y="245" width="260" height="72" rx="36" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="600" y="288" text-anchor="middle" class="node">ex:hasTeacher</text>
+
+  <!-- Domain and range statements -->
+  <line x1="490" y1="255" x2="350" y2="176" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <rect x="355" y="195" width="130" height="35" rx="10" fill="#ffffff"/>
+  <text x="420" y="219" text-anchor="middle" class="edge">rdfs:domain</text>
+
+  <line x1="710" y1="255" x2="850" y2="176" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <rect x="715" y="195" width="130" height="35" rx="10" fill="#ffffff"/>
+  <text x="780" y="219" text-anchor="middle" class="edge">rdfs:range</text>
+
+  <!-- Data nodes -->
+  <rect x="125" y="435" width="230" height="72" rx="36" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="240" y="478" text-anchor="middle" class="node">ex:CS101</text>
+
+  <rect x="845" y="435" width="230" height="72" rx="36" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <text x="960" y="478" text-anchor="middle" class="node">ex:alice</text>
+
+  <!-- CS101 hasTeacher Alice -->
+  <line x1="355" y1="471" x2="835" y2="471" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <rect x="500" y="426" width="200" height="38" rx="10" fill="#ffffff" stroke="#7c3aed"/>
+  <text x="600" y="452" text-anchor="middle" class="edge">ex:hasTeacher</text>
+
+  <!-- Same-property visual guide -->
+  <path d="M 600 317 L 600 426" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="7 7"/>
+  <rect x="620" y="355" width="245" height="36" rx="10" fill="#ffffff" stroke="#c4b5fd"/>
+  <text x="742" y="379" text-anchor="middle" class="guide">same URI — guide, not a triple</text>
+
+  <!-- Inferred types -->
+  <line x1="240" y1="435" x2="240" y2="187" stroke="#ea580c" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-orange)"/>
+  <rect x="132" y="290" width="216" height="38" rx="10" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="240" y="315" text-anchor="middle" class="inferred">rdf:type — inferred</text>
+
+  <line x1="960" y1="435" x2="960" y2="187" stroke="#ea580c" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-orange)"/>
+  <rect x="852" y="290" width="216" height="38" rx="10" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="960" y="315" text-anchor="middle" class="inferred">rdf:type — inferred</text>
+
+  <!-- Legend -->
+  <line x1="355" y1="565" x2="425" y2="565" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <text x="440" y="571" class="legend">stated triple</text>
+  <line x1="630" y1="565" x2="700" y2="565" stroke="#ea580c" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow-orange)"/>
+  <text x="715" y="571" class="legend">inferred triple</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Declaring and using an RDF property</title>
+  <desc id="desc">A combined graph states that book1 has author Alice, Alice is a Person, and hasAuthor is an RDF Property.</desc>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M 0 0 L 9 4.5 L 0 9 z" fill="#7c3aed"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px Arial, sans-serif; fill: #172033; }
+      .node { font: 700 21px Arial, sans-serif; fill: #172033; }
+      .edge { font: 600 19px Arial, sans-serif; fill: #334155; }
+      .guide { font: 16px Arial, sans-serif; fill: #6d28d9; }
+      .note-title { font: 700 19px Arial, sans-serif; fill: #172033; }
+      .note { font: 17px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="570" fill="#ffffff"/>
+  <text x="600" y="44" text-anchor="middle" class="heading">Declaring and using an RDF property</text>
+
+  <rect x="40" y="70" width="1120" height="450" rx="22" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Data triple -->
+  <rect x="90" y="180" width="225" height="76" rx="38" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="202" y="225" text-anchor="middle" class="node">ex:book1</text>
+
+  <line x1="315" y1="218" x2="755" y2="218" stroke="#334155" stroke-width="3" marker-end="url(#arrow-dark)"/>
+  <rect x="410" y="173" width="250" height="44" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="535" y="202" text-anchor="middle" class="edge">ex:hasAuthor</text>
+
+  <rect x="765" y="180" width="250" height="76" rx="38" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <text x="890" y="225" text-anchor="middle" class="node">ex:alice</text>
+
+  <!-- Fault type -->
+  <line x1="890" y1="180" x2="890" y2="124" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)"/>
+  <text x="928" y="157" class="edge">rdf:type</text>
+  <rect x="795" y="82" width="190" height="48" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="890" y="113" text-anchor="middle" class="node">ex:Person</text>
+
+  <!-- Property as a resource -->
+  <rect x="275" y="370" width="260" height="72" rx="36" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="405" y="413" text-anchor="middle" class="node">ex:hasAuthor</text>
+
+  <line x1="535" y1="406" x2="780" y2="406" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+  <text x="655" y="391" text-anchor="middle" class="edge">rdf:type</text>
+  <rect x="790" y="370" width="235" height="72" rx="14" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <text x="907" y="413" text-anchor="middle" class="node">rdf:Property</text>
+
+  <!-- Visual identity guide, not an RDF edge -->
+  <path d="M 535 219 C 535 270, 405 292, 405 370" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="7 7"/>
+  <rect x="390" y="286" width="250" height="38" rx="10" fill="#ffffff" stroke="#c4b5fd"/>
+  <text x="515" y="310" text-anchor="middle" class="guide">same URI - visual guide, not a triple</text>
+
+  <!-- Explanatory notes -->
+  <rect x="70" y="465" width="1060" height="38" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="90" y="490" class="note-title">Three statements:</text>
+  <text x="255" y="490" class="note">book1 has author Alice;</text>
+  <text x="500" y="490" class="note">Alice is a Person;</text>
+  <text x="700" y="490" class="note">hasAuthor is an RDF property.</text>
+</svg>
