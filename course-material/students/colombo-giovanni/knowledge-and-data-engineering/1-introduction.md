@@ -71,11 +71,11 @@ A **knowledge graph (KG)** is a graph of data intended to accumulate and convey 
 
 Example:
 
-![Example knowledge graph representing Bob, a person, his friend Alice, and his date of birth.](images/knowledge-graph-bob-example.png)
+![Example knowledge graph representing Bob, a person, his friend Alice, and his date of birth.](images/1-introduction/knowledge-graph-bob-example.png)
 
 Knowledge graphs can connect data created by different entities.
 
-![Two linked knowledge graphs: Bob's personal graph is connected to a graph about the Mona Lisa.](images/linked-knowledge-graphs-example.png)
+![Two linked knowledge graphs: Bob's personal graph is connected to a graph about the Mona Lisa.](images/1-introduction/linked-knowledge-graphs-example.png)
 
 ## Advantages of a Graph-Based Approach
 
@@ -90,7 +90,7 @@ Knowledge graphs can connect data created by different entities.
 
 Google Knowledge Graph was an early public-facing example of knowledge-graph technology.
 
-![Google Knowledge Graph](images/google-knowledge-graph.png)
+![Google Knowledge Graph](images/1-introduction/google-knowledge-graph.png)
 
 ## DBpedia and Wikidata
 
@@ -113,11 +113,11 @@ The subject and object are nodes, while the predicate is the edge that describes
 
 The W3C stack builds knowledge graphs in layers: Unicode and URIs identify and encode entities; RDF models the graph and its relationships; RDF Schema supplies shared vocabularies; and SPARQL queries the resulting graph data. A **vocabulary** is a shared set of named terms used consistently to describe a domain, such as `Person`, `birthDate`, and `isFriendOf`.
 
-![The Semantic Web technology stack, showing Unicode and URIs as foundations, RDF for graph data, RDF Schema for vocabularies, and SPARQL as the query language.](images/semantic-web-technology-stack.png)
+![The Semantic Web technology stack, showing Unicode and URIs as foundations, RDF for graph data, RDF Schema for vocabularies, and SPARQL as the query language.](images/1-introduction/semantic-web-technology-stack.png)
 
 The expanded stack shows how this foundation can be extended. **SKOS** supports thesauri and classification schemes, while **OWL** supports more expressive ontologies. It also distinguishes the Linked Data layer, which identifies entities and describes their relationships, from the broader Semantic Web layer, which adds ontologies.
 
-![Extended Semantic Web technology stack, adding SKOS for classification schemes and OWL for expressive ontologies, and distinguishing Linked Data from the Semantic Web.](images/linked-data-and-semantic-web-stack.png)
+![Extended Semantic Web technology stack, adding SKOS for classification schemes and OWL for expressive ontologies, and distinguishing Linked Data from the Semantic Web.](images/1-introduction/linked-data-and-semantic-web-stack.png)
 
 **Linked Data** is a set of principles and best practices for publishing, interlinking, and using graph data with standard web technologies. It uses HTTP URIs to name resources and retrieve data through the existing HTTP stack.
 

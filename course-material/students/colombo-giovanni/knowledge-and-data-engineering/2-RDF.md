@@ -53,7 +53,7 @@ Each triple defines an edge. The subjects and objects provide the graph’s node
 
 ### What the Example Graph Shows
 
-![Example RDF graph showing faults, network equipment, locations, teams, and literal values.](images/knowledge-graph-example.png)
+![Example RDF graph showing faults, network equipment, locations, teams, and literal values.](images/2-RDF/knowledge-graph-example.png)
 
 The example graph illustrates several general properties of graphs and RDF:
 
@@ -210,7 +210,7 @@ This says: “the resource identified by `http://example.org/books/the-hobbit` h
 - **Predicate:** `ex:title` expands to `http://example.org/vocabulary#title` using the `xmlns:ex` declaration.
 - **Object:** the text `The Hobbit` is a literal value.
 
-![RDF graph in which The Hobbit is connected by the title predicate to the literal value “The Hobbit”.](images/rdf-literal-object-graph.svg)
+![RDF graph in which The Hobbit is connected by the title predicate to the literal value “The Hobbit”.](images/2-RDF/rdf-literal-object-graph.svg)
 
 ### Example with a Resource as the Object
 
@@ -239,7 +239,7 @@ This represents the following triple:
 - **Predicate:** `ex:author`, expanded using the `xmlns:ex` declaration.
 - **Object:** the URI of Tolkien, supplied by `rdf:resource`. Because it is a URI rather than text, the object is a resource and not a literal.
 
-![RDF graph in which The Hobbit is connected by the author predicate to the resource J. R. R. Tolkien.](images/rdf-resource-object-graph.svg)
+![RDF graph in which The Hobbit is connected by the author predicate to the resource J. R. R. Tolkien.](images/2-RDF/rdf-resource-object-graph.svg)
 
 RDF/XML can coexist with other XML content, but its tree-shaped syntax is often less convenient for reading and writing RDF by hand.
 
@@ -253,7 +253,7 @@ RDF/XML can coexist with other XML content, but its tree-shaped syntax is often 
 ff:fault1004 ff:additionalInfo "OK, panic now" .
 ```
 
-![Graph of a single Turtle statement: fault1004 has the literal additional information “OK, panic now”.](images/turtle-single-triple-graph.svg)
+![Graph of a single Turtle statement: fault1004 has the literal additional information “OK, panic now”.](images/2-RDF/turtle-single-triple-graph.svg)
 
 The subject, predicate, and object are separated by whitespace, and a statement ends with a period. A semicolon allows several predicates to be written for the same subject:
 
@@ -266,7 +266,7 @@ ff:fault1004
     ff:probableCause ff:softwareError .
 ```
 
-![Graph showing three predicates that share fault1004 as their subject.](images/turtle-shared-subject-graph.svg)
+![Graph showing three predicates that share fault1004 as their subject.](images/2-RDF/turtle-shared-subject-graph.svg)
 
 A comma allows several objects for the same subject and predicate:
 
@@ -274,7 +274,7 @@ A comma allows several objects for the same subject and predicate:
 ff:fault1004 ff:additionalInfo "OK, panic now", "This is serious" .
 ```
 
-![Graph showing two literal objects connected to fault1004 by the same additionalInfo predicate.](images/turtle-multiple-objects-graph.svg)
+![Graph showing two literal objects connected to fault1004 by the same additionalInfo predicate.](images/2-RDF/turtle-multiple-objects-graph.svg)
 
 ## Blank Nodes
 
@@ -290,7 +290,7 @@ ff:fault1004
     ] .
 ```
 
-![RDF graph in which fault1004 is connected to an anonymous blank node describing a Cisco router.](images/rdf-blank-node-graph.svg)
+![RDF graph in which fault1004 is connected to an anonymous blank node describing a Cisco router.](images/2-RDF/rdf-blank-node-graph.svg)
 
 The square brackets create a blank node and describe it inline. Blank nodes cannot be reliably referred to outside the graph in which they are defined. This can create complications when querying or merging graphs, so a URI is preferable when the resource needs a stable identity.
 
@@ -307,7 +307,7 @@ ff:ne01
     ff:serviceType "router" .
 ```
 
-![RDF graph in which fault1004 is connected to the identified resource ne01, which describes a Cisco router.](images/rdf-identified-resource-graph.svg)
+![RDF graph in which fault1004 is connected to the identified resource ne01, which describes a Cisco router.](images/2-RDF/rdf-identified-resource-graph.svg)
 
 ## Handy Summary
 

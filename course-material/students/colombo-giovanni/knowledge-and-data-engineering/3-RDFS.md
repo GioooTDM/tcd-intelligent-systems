@@ -92,7 +92,7 @@ ex:alice rdf:type ex:Person .
 ex:book1 ex:hasAuthor ex:alice .
 ```
 
-![RDF graph showing hasAuthor being declared as a property and used to connect a book to Alice](images/rdf-type-property-example.svg)
+![RDF graph showing hasAuthor being declared as a property and used to connect a book to Alice](images/3-RDFS/rdf-type-property-example.svg)
 
 The first triple explicitly declares `ex:hasAuthor` as a property. The third triple then uses it as a predicate to connect the book to its author:
 
@@ -115,7 +115,7 @@ An RDF property is itself a resource, so it can also be the subject of other tri
 ex:hasAuthor ex:description "Connects a book to its author." .
 ```
 
-![Complete RDF graph in which hasAuthor connects a book to Alice and has its own description](images/rdf-property-with-description-example.svg)
+![Complete RDF graph in which hasAuthor connects a book to Alice and has its own description](images/3-RDFS/rdf-property-with-description-example.svg)
 
 ### Turtle Shorthand for `rdf:type`
 
@@ -142,7 +142,7 @@ For graph modelling, RDF is:
 
 RDF provides a way to build graphs from triples, but it imposes few structural constraints. In other words, it does not provide a strongly constrained schema. As a result, a triple can be syntactically valid even when its meaning is inappropriate: nothing prevents someone from assigning a surname to a network element or a tax number to an animal.
 
-![A syntactically valid but semantically inappropriate RDF graph in which a router has a surname](images/rdf-weak-typing-example.svg)
+![A syntactically valid but semantically inappropriate RDF graph in which a router has a surname](images/3-RDFS/rdf-weak-typing-example.svg)
 
 This weak typing creates two problems:
 
@@ -196,7 +196,7 @@ Using the `a` shorthand introduced above, the example states that `ex:tornado` i
 ex:tornado a ex:Animal .
 ```
 
-![RDFS graph showing Tornado as an instance of Horse, Horse as a subclass of Animal, and the inferred type Animal](images/rdfs-class-instance-example.svg)
+![RDFS graph showing Tornado as an instance of Horse, Horse as a subclass of Animal, and the inferred type Animal](images/3-RDFS/rdfs-class-instance-example.svg)
 
 An **instance** is an individual member of a class. A **subclass** represents a subset of another class's members. The same concept may be modelled as an instance or as a class depending on the domain and the intended level of abstraction.
 
@@ -206,7 +206,7 @@ RDFS also permits multiple inheritance: one class may be a subclass of more than
 
 For example, a teaching assistant may be both a student and an employee.
 
-![RDFS multiple-inheritance graph showing TeachingAssistant as a subclass of both Student and Employee](images/rdfs-multiple-inheritance-example.svg)
+![RDFS multiple-inheritance graph showing TeachingAssistant as a subclass of both Student and Employee](images/3-RDFS/rdfs-multiple-inheritance-example.svg)
 
 ## Properties, Domain, and Range
 
@@ -234,7 +234,7 @@ ex:CS101 a ex:Course .
 ex:alice a ex:Teacher .
 ```
 
-![RDFS graph showing how the domain and range of hasTeacher infer that CS101 is a Course and Alice is a Teacher](images/rdfs-domain-range-inference.svg)
+![RDFS graph showing how the domain and range of hasTeacher infer that CS101 is a Course and Alice is a Teacher](images/3-RDFS/rdfs-domain-range-inference.svg)
 
 If a property has several domain declarations, its subject is inferred to belong to all the declared classes. Multiple domains therefore express an intersection, not a choice between alternatives. The same principle applies to multiple ranges.
 
@@ -253,7 +253,7 @@ then RDFS entails:
 ex:marco ex:ownsVehicle ex:bike1 .
 ```
 
-![RDFS subproperty graph: Marco owning a bicycle implies that Marco owns a vehicle](images/rdfs-subproperty-inference.svg)
+![RDFS subproperty graph: Marco owning a bicycle implies that Marco owns a vehicle](images/3-RDFS/rdfs-subproperty-inference.svg)
 
 ## RDFS Annotation Properties
 
@@ -338,7 +338,7 @@ ex:PizzaMargarita ex:hasTopping ex:tomato .
 
 RDFS does **not** pass `ex:hasTopping` from the class resource to its instances. It cannot infer `ex:pizza1 ex:hasTopping ex:tomato .` from those two triples. You could state that last triple explicitly for `ex:pizza1`, but it would still say nothing about other Margherita pizzas. RDFS has no way to require *every* instance of `ex:PizzaMargarita` to have a topping of type `ex:Tomato`.
 
-![Graph showing that a hasTopping triple about the PizzaMargarita class does not imply the same triple for an individual pizza](images/rdfs-class-topping-not-inherited.svg)
+![Graph showing that a hasTopping triple about the PizzaMargarita class does not imply the same triple for an individual pizza](images/3-RDFS/rdfs-class-topping-not-inherited.svg)
 
 **5. Yes, through domain inference.** If a resource has an `ex:hasTopping` value, RDFS can infer that the resource is a pizza:
 
