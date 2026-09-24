@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="455" viewBox="0 0 900 455" role="img" aria-labelledby="title desc">
+<title id="title">One spam email: logistic loss falls as its score improves</title>
+<desc id="desc">An email with two spam keywords and true label plus one is evaluated with slope one and four intercepts. As the score changes from minus two to minus one, the prediction stays negative, but the logistic penalty falls from 2.13 to 1.31. At scores zero and plus one, the prediction is positive and the penalty falls further.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#41566d"/></marker></defs>
+<rect width="900" height="455" rx="18" fill="#f5f8fb"/>
+<text x="34.0" y="43.0" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#26384b" font-weight="700">One spam email: loss falls as its score improves</text>
+<text x="34.0" y="70.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#526273" >2 spam keywords · true label +1 · slope θ₁ = 1</text>
+<rect x="24" y="91" width="852" height="329" rx="16" fill="#fff" stroke="#d9e3ec"/>
+<rect x="130" y="125" width="406.2" height="240" fill="#fff0ee"/>
+<rect x="536.2" y="125" width="243.8" height="240" fill="#eef6fc"/>
+<text x="420.0" y="190.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#a33f38" font-weight="700" text-anchor="middle">Predict normal (−1)</text>
+<text x="658.1" y="160.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#21648f" font-weight="700" text-anchor="middle">Predict spam (+1)</text>
+<line x1="536.2" y1="125" x2="536.2" y2="365" stroke="#2e9867" stroke-width="2.5" stroke-dasharray="7 6"/>
+<line x1="124" y1="365.0" x2="136" y2="365.0" stroke="#41566d" stroke-width="1.5"/>
+<text x="112.0" y="370.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="end">0</text>
+<line x1="124" y1="276.1" x2="136" y2="276.1" stroke="#41566d" stroke-width="1.5"/>
+<text x="112.0" y="281.1" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="end">1</text>
+<line x1="124" y1="187.2" x2="136" y2="187.2" stroke="#41566d" stroke-width="1.5"/>
+<text x="112.0" y="192.2" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="end">2</text>
+<line x1="211.2" y1="359" x2="211.2" y2="371" stroke="#41566d" stroke-width="1.5"/>
+<text x="211.2" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">−2</text>
+<line x1="373.8" y1="359" x2="373.8" y2="371" stroke="#41566d" stroke-width="1.5"/>
+<text x="373.8" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">−1</text>
+<line x1="536.2" y1="359" x2="536.2" y2="371" stroke="#41566d" stroke-width="1.5"/>
+<text x="536.2" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">0</text>
+<line x1="698.8" y1="359" x2="698.8" y2="371" stroke="#41566d" stroke-width="1.5"/>
+<text x="698.8" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">1</text>
+<polyline points="130.0,135.8 134.1,137.8 138.1,139.9 142.2,141.9 146.2,143.9 150.3,146.0 154.4,148.0 158.4,150.0 162.5,152.1 166.6,154.1 170.6,156.1 174.7,158.1 178.7,160.1 182.8,162.1 186.9,164.1 190.9,166.1 195.0,168.1 199.1,170.0 203.1,172.0 207.2,174.0 211.2,175.9 215.3,177.9 219.4,179.8 223.4,181.8 227.5,183.7 231.6,185.7 235.6,187.6 239.7,189.5 243.8,191.4 247.8,193.3 251.9,195.2 255.9,197.1 260.0,199.0 264.1,200.8 268.1,202.7 272.2,204.6 276.2,206.4 280.3,208.3 284.4,210.1 288.4,211.9 292.5,213.8 296.6,215.6 300.6,217.4 304.7,219.2 308.8,221.0 312.8,222.7 316.9,224.5 320.9,226.3 325.0,228.0 329.1,229.8 333.1,231.5 337.2,233.2 341.2,234.9 345.3,236.6 349.4,238.3 353.4,240.0 357.5,241.7 361.6,243.3 365.6,245.0 369.7,246.6 373.8,248.3 377.8,249.9 381.9,251.5 385.9,253.1 390.0,254.7 394.1,256.2 398.1,257.8 402.2,259.4 406.3,260.9 410.3,262.4 414.4,263.9 418.4,265.4 422.5,266.9 426.6,268.4 430.6,269.9 434.7,271.3 438.8,272.8 442.8,274.2 446.9,275.6 450.9,277.0 455.0,278.4 459.1,279.8 463.1,281.2 467.2,282.5 471.2,283.8 475.3,285.2 479.4,286.5 483.4,287.8 487.5,289.1 491.6,290.3 495.6,291.6 499.7,292.8 503.8,294.1 507.8,295.3 511.9,296.5 515.9,297.7 520.0,298.8 524.1,300.0 528.1,301.1 532.2,302.3 536.2,303.4 540.3,304.5 544.4,305.6 548.4,306.7 552.5,307.7 556.6,308.8 560.6,309.8 564.7,310.8 568.8,311.8 572.8,312.8 576.9,313.8 580.9,314.8 585.0,315.7 589.1,316.7 593.1,317.6 597.2,318.5 601.2,319.4 605.3,320.3 609.4,321.2 613.4,322.0 617.5,322.9 621.6,323.7 625.6,324.5 629.7,325.3 633.8,326.1 637.8,326.9 641.9,327.7 645.9,328.4 650.0,329.2 654.1,329.9 658.1,330.6 662.2,331.3 666.2,332.0 670.3,332.7 674.4,333.4 678.4,334.0 682.5,334.7 686.6,335.3 690.6,335.9 694.7,336.6 698.8,337.2 702.8,337.7 706.9,338.3 710.9,338.9 715.0,339.5 719.1,340.0 723.1,340.5 727.2,341.1 731.2,341.6 735.3,342.1 739.4,342.6 743.4,343.1 747.5,343.6 751.6,344.0 755.6,344.5 759.7,345.0 763.8,345.4 767.8,345.8 771.9,346.3 775.9,346.7 780.0,347.1" fill="none" stroke="#344a61" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="211.2" cy="175.9" r="7" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<text x="223.2" y="155.9" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#344a61" >θ₀=−4 · loss 2.13</text>
+<circle cx="373.8" cy="248.3" r="7" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<text x="385.8" y="228.3" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#344a61" >θ₀=−3 · loss 1.31</text>
+<circle cx="536.2" cy="303.4" r="7" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<text x="548.2" y="283.4" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#344a61" >θ₀=−2 · loss 0.69</text>
+<circle cx="698.8" cy="337.2" r="7" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<text x="710.8" y="317.2" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#344a61" >θ₀=−1 · loss 0.31</text>
+<line x1="130" y1="365" x2="790" y2="365" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="130" y1="365" x2="130" y2="117" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="53.0" y="245.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#344a61" text-anchor="middle" transform="rotate(-90 53 245)">penalty for this email</text>
+<text x="455.0" y="448.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#344a61" text-anchor="middle">score θᵀx</text>
+</svg>

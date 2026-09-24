@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Decision boundaries with one and two features</title>
+  <desc id="desc">On a one-dimensional number line, the equation 1 plus 0.5 times x one equals zero creates a boundary point at x one equals negative two. On a two-dimensional plane, the equation 2 plus x one plus 2 times x two equals zero creates the line x two equals negative x one divided by two minus one. Blue and orange regions show predicted positive and negative classes.</desc>
+  <rect width="1200" height="570" rx="20" fill="#f8fafc"/>
+  <rect x="24" y="24" width="550" height="522" rx="16" fill="#ffffff" stroke="#d8e1e9"/>
+  <rect x="626" y="24" width="550" height="522" rx="16" fill="#ffffff" stroke="#d8e1e9"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#172533">
+    <text x="52" y="68" font-size="27" font-weight="700">One feature: a point</text>
+    <text x="52" y="108" font-size="21">1 + 0.5x₁ = 0</text>
+    <text x="52" y="137" font-size="19" fill="#526273">Boundary: x₁ = −2</text>
+
+    <text x="654" y="68" font-size="27" font-weight="700">Two features: a line</text>
+    <text x="654" y="108" font-size="21">2 + x₁ + 2x₂ = 0</text>
+    <text x="654" y="137" font-size="19" fill="#526273">Boundary: x₂ = −x₁/2 − 1</text>
+  </g>
+
+  <!-- One-dimensional example: x_1 ranges from -4 to 2. -->
+  <rect x="84" y="230" width="156" height="108" rx="9" fill="#fff1e7"/>
+  <rect x="240" y="230" width="300" height="108" rx="9" fill="#e9f2ff"/>
+  <line x1="84" y1="337" x2="540" y2="337" stroke="#33475b" stroke-width="3"/>
+  <polygon points="540,337 529,331 529,343" fill="#33475b"/>
+  <line x1="240" y1="225" x2="240" y2="352" stroke="#172533" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="240" cy="337" r="9" fill="#172533" stroke="#ffffff" stroke-width="3"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="160" y="275" font-size="24" font-weight="700" fill="#ab5b27">Predicted −1</text>
+    <text x="390" y="275" font-size="24" font-weight="700" fill="#245b9b">Predicted +1</text>
+    <text x="84" y="378" font-size="17" fill="#526273">−4</text>
+    <text x="240" y="378" font-size="17" font-weight="700" fill="#172533">−2</text>
+    <text x="390" y="378" font-size="17" fill="#526273">0</text>
+    <text x="530" y="378" font-size="17" fill="#526273">2</text>
+    <text x="240" y="412" font-size="17" fill="#526273">boundary point</text>
+  </g>
+  <text x="535" y="410" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#172533" text-anchor="end">x₁</text>
+
+  <!-- Two-dimensional example: x_1 ranges from -4 to 4; x_2 from -4 to 3. -->
+  <rect x="660" y="175" width="460" height="300" fill="#fff1e7" stroke="#d8e1e9"/>
+  <polygon points="660,175 1120,175 1120,432 660,261" fill="#e9f2ff"/>
+  <line x1="660" y1="304" x2="1120" y2="304" stroke="#9aabba" stroke-width="1.5"/>
+  <line x1="890" y1="175" x2="890" y2="475" stroke="#9aabba" stroke-width="1.5"/>
+  <line x1="660" y1="261" x2="1120" y2="432" stroke="#172533" stroke-width="4"/>
+  <circle cx="775" cy="304" r="6" fill="#172533" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="890" cy="347" r="6" fill="#172533" stroke="#ffffff" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="942" y="224" font-size="23" font-weight="700" fill="#245b9b">Predicted +1</text>
+    <text x="703" y="412" font-size="23" font-weight="700" fill="#ab5b27">Predicted −1</text>
+    <text x="658" y="499" font-size="17" fill="#526273">−4</text>
+    <text x="884" y="499" font-size="17" fill="#526273">0</text>
+    <text x="1104" y="499" font-size="17" fill="#526273">4</text>
+    <text x="1130" y="482" font-size="19" fill="#172533">x₁</text>
+    <text x="637" y="185" font-size="19" fill="#172533">x₂</text>
+    <text x="637" y="310" font-size="17" fill="#526273">0</text>
+    <text x="700" y="297" font-size="16" fill="#172533">(−2, 0)</text>
+    <text x="902" y="366" font-size="16" fill="#172533">(0, −1)</text>
+  </g>
+</svg>

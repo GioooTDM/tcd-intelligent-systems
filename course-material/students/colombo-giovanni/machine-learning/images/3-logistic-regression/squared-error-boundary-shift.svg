@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 130 1280 440" role="img" aria-labelledby="title desc">
+<title id="title">The effect of an outlier on squared-error classification</title>
+<desc id="desc">Both panels show the same three red negative examples near x equals 1 and three blue positive examples near x equals 5.5, in identical positions. Pale red and blue areas mark predictions negative and positive on either side of the dashed green boundary. The second panel adds a blue positive example at x equals 2.5 in the predicted-negative area. The least-squares decision boundary shifts from x equals 3.30 to x equals 2.84.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#41566d"/></marker></defs>
+<rect y="130" width="1280" height="440" rx="20" fill="#f5f8fb"/>
+<text x="640.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#223247" font-weight="700" text-anchor="middle">The effect of an outlier on squared-error classification</text>
+<rect x="24" y="185" width="600" height="340" rx="16" fill="#fff" stroke="#d9e3ec"/>
+<rect x="104.0" y="225" width="221.6" height="240" fill="#fff0ee"/>
+<rect x="325.6" y="225" width="248.4" height="240" fill="#eef6fc"/>
+<text x="214.8" y="251.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#a33f38" font-weight="700" text-anchor="middle">Predicted −1</text>
+<text x="449.8" y="251.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#21648f" font-weight="700" text-anchor="middle">Predicted +1</text>
+<line x1="104" y1="465" x2="104" y2="225" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="46.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle" transform="rotate(-90 46 350)">score z / label y</text>
+<text x="62.0" y="281.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#526273" >+1</text>
+<text x="62.0" y="431.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#526273" >−1</text>
+<text x="562.0" y="403.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#526273" text-anchor="end">feature x</text>
+<line x1="325.6" y1="225" x2="325.6" y2="465" stroke="#2e9867" stroke-width="2.5" stroke-dasharray="7 6"/>
+<line x1="104.0" y1="425.0" x2="574.0" y2="425.0" stroke="#e3eaf0" stroke-width="1.5"/>
+<line x1="98.0" y1="425.0" x2="110.0" y2="425.0" stroke="#41566d" stroke-width="1.5"/>
+<line x1="104.0" y1="275.0" x2="574.0" y2="275.0" stroke="#e3eaf0" stroke-width="1.5"/>
+<line x1="98.0" y1="275.0" x2="110.0" y2="275.0" stroke="#41566d" stroke-width="1.5"/>
+<line x1="104" y1="350" x2="582" y2="350" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="104.0" y1="461.1" x2="574.0" y2="225.4" stroke="#344a61" stroke-width="3"/>
+<circle cx="157.7" cy="425.0" r="7.5" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="177.9" cy="425.0" r="7.5" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="198.0" cy="425.0" r="7.5" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="453.1" cy="275.0" r="7.5" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="473.3" cy="275.0" r="7.5" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="493.4" cy="275.0" r="7.5" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<line x1="104.0" y1="344" x2="104.0" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<line x1="171.1" y1="344" x2="171.1" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="166.1" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >1</text>
+<line x1="238.3" y1="344" x2="238.3" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="233.3" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >2</text>
+<line x1="305.4" y1="344" x2="305.4" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="300.4" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >3</text>
+<line x1="372.6" y1="344" x2="372.6" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="367.6" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >4</text>
+<line x1="439.7" y1="344" x2="439.7" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="434.7" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >5</text>
+<line x1="506.9" y1="344" x2="506.9" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="501.9" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >6</text>
+<line x1="574.0" y1="344" x2="574.0" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="569.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >7</text>
+<text x="276.6" y="487.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#227d56" font-weight="700">boundary x ≈ 3.30</text>
+<rect x="656" y="185" width="600" height="340" rx="16" fill="#fff" stroke="#d9e3ec"/>
+<rect x="736.0" y="225" width="190.9" height="240" fill="#fff0ee"/>
+<rect x="926.9" y="225" width="279.1" height="240" fill="#eef6fc"/>
+<text x="831.5" y="251.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#a33f38" font-weight="700" text-anchor="middle">Predicted −1</text>
+<text x="1066.5" y="251.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#21648f" font-weight="700" text-anchor="middle">Predicted +1</text>
+<line x1="736" y1="465" x2="736" y2="225" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="678.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle" transform="rotate(-90 678 350)">score z / label y</text>
+<text x="694.0" y="281.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#526273" >+1</text>
+<text x="694.0" y="431.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#526273" >−1</text>
+<text x="1194.0" y="403.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#526273" text-anchor="end">feature x</text>
+<line x1="926.9" y1="225" x2="926.9" y2="465" stroke="#2e9867" stroke-width="2.5" stroke-dasharray="7 6"/>
+<line x1="736.0" y1="425.0" x2="1206.0" y2="425.0" stroke="#e3eaf0" stroke-width="1.5"/>
+<line x1="730.0" y1="425.0" x2="742.0" y2="425.0" stroke="#41566d" stroke-width="1.5"/>
+<line x1="736.0" y1="275.0" x2="1206.0" y2="275.0" stroke="#e3eaf0" stroke-width="1.5"/>
+<line x1="730.0" y1="275.0" x2="742.0" y2="275.0" stroke="#41566d" stroke-width="1.5"/>
+<line x1="736" y1="350" x2="1214" y2="350" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="736.0" y1="439.1" x2="1194.7" y2="225.0" stroke="#344a61" stroke-width="3"/>
+<circle cx="789.7" cy="425.0" r="7.5" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="809.9" cy="425.0" r="7.5" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="830.0" cy="425.0" r="7.5" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="1085.1" cy="275.0" r="7.5" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="1105.3" cy="275.0" r="7.5" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="1125.4" cy="275.0" r="7.5" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="903.9" cy="275.0" r="14" fill="none" stroke="#e4a137" stroke-width="3"/>
+<circle cx="903.9" cy="275.0" r="7.5" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<line x1="736.0" y1="344" x2="736.0" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<line x1="803.1" y1="344" x2="803.1" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="798.1" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >1</text>
+<line x1="870.3" y1="344" x2="870.3" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="865.3" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >2</text>
+<line x1="937.4" y1="344" x2="937.4" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="932.4" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >3</text>
+<line x1="1004.6" y1="344" x2="1004.6" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="999.6" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >4</text>
+<line x1="1071.7" y1="344" x2="1071.7" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="1066.7" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >5</text>
+<line x1="1138.9" y1="344" x2="1138.9" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="1133.9" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >6</text>
+<line x1="1206.0" y1="344" x2="1206.0" y2="356" stroke="#41566d" stroke-width="1.5"/>
+<text x="1201.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" >7</text>
+<text x="877.9" y="487.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#227d56" font-weight="700">boundary x ≈ 2.84</text>
+<text x="640.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#344a61" text-anchor="middle">The green line separates predicted −1 (left) from predicted +1 (right).</text>
+</svg>

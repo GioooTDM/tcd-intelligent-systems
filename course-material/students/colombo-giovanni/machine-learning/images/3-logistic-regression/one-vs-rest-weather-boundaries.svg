@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1130" viewBox="0 0 1200 1130" role="img" aria-labelledby="title desc">
+<title id="title">Four weather classes viewed as one-vs-rest classifiers</title>
+<desc id="desc">The top plot contains illustrative Sunny, Cloudy, Rain, and Snow clusters in temperature and precipitation space. Four lower plots each highlight one class as positive, leave all other examples hollow and negative, and show a separate linear decision boundary.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#41566d"/></marker></defs>
+<rect width="1200" height="1130" rx="20" fill="#f5f8fb"/>
+<text x="46.0" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#26384b" font-weight="700">One-vs-rest: four weather classes</text>
+<text x="46.0" y="79.0" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#526273" >x₁ = temperature · x₂ = precipitation (illustrative normalised features)</text>
+<rect x="200" y="101" width="800" height="355" rx="17" fill="#fff" stroke="#d9e3ec"/>
+<text x="226.0" y="133.0" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#26384b" font-weight="700">All classes together</text>
+<line x1="348" y1="400" x2="847" y2="400" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="348" y1="400" x2="348" y2="146" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="593.0" y="429.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">temperature x₁</text>
+<text x="314.0" y="277.5" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle" transform="rotate(-90 314 277.5)">precipitation x₂</text>
+<circle cx="887" cy="181" r="7" fill="#e29a32" stroke="#fff" stroke-width="1.5"/>
+<text x="906.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#26384b" >Sunny</text>
+<circle cx="700.8" cy="360.8" r="7" fill="#e29a32" stroke="#fff" stroke-width="2"/>
+<circle cx="744.9" cy="341.2" r="7" fill="#e29a32" stroke="#fff" stroke-width="2"/>
+<circle cx="769.4" cy="368.1" r="7" fill="#e29a32" stroke="#fff" stroke-width="2"/>
+<circle cx="887" cy="228" r="7" fill="#8b73bb" stroke="#fff" stroke-width="1.5"/>
+<text x="906.0" y="233.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#26384b" >Cloudy</text>
+<circle cx="436.2" cy="360.8" r="7" fill="#8b73bb" stroke="#fff" stroke-width="2"/>
+<circle cx="470.5" cy="341.2" r="7" fill="#8b73bb" stroke="#fff" stroke-width="2"/>
+<circle cx="499.9" cy="365.7" r="7" fill="#8b73bb" stroke="#fff" stroke-width="2"/>
+<circle cx="887" cy="275" r="7" fill="#2979b4" stroke="#fff" stroke-width="1.5"/>
+<text x="906.0" y="280.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#26384b" >Rain</text>
+<circle cx="700.8" cy="211.3" r="7" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="749.8" cy="186.8" r="7" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="784.1" cy="228.5" r="7" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="887" cy="322" r="7" fill="#2e9f9a" stroke="#fff" stroke-width="1.5"/>
+<text x="906.0" y="327.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#26384b" >Snow</text>
+<circle cx="426.4" cy="216.2" r="7" fill="#2e9f9a" stroke="#fff" stroke-width="2"/>
+<circle cx="470.5" cy="189.3" r="7" fill="#2e9f9a" stroke="#fff" stroke-width="2"/>
+<circle cx="509.7" cy="223.6" r="7" fill="#2e9f9a" stroke="#fff" stroke-width="2"/>
+<line x1="600" y1="468" x2="600" y2="496" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#344a61" text-anchor="middle">One positive class (+1) against the other three classes (−1)</text>
+<rect x="40" y="535" width="540" height="280" rx="16" fill="#fff" stroke="#d9e3ec"/>
+<text x="65.0" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#26384b" font-weight="700">Sunny (+1) vs rest (−1)</text>
+<polygon points="309.0,764.0 540.0,764.0 540.0,659.0" fill="#fff2df"/>
+<line x1="309.0" y1="764.0" x2="540.0" y2="659.0" stroke="#344a61" stroke-width="2.5"/>
+<line x1="155" y1="764" x2="549" y2="764" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="155" y1="764" x2="155" y2="580" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="347.5" y="793.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">temperature x₁</text>
+<text x="121.0" y="676.5" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle" transform="rotate(-90 121 676.5)">precipitation x₂</text>
+<circle cx="432.2" cy="736.0" r="5.5" fill="#e29a32" stroke="#fff" stroke-width="1.7"/>
+<circle cx="466.9" cy="722.0" r="5.5" fill="#e29a32" stroke="#fff" stroke-width="1.7"/>
+<circle cx="486.1" cy="741.2" r="5.5" fill="#e29a32" stroke="#fff" stroke-width="1.7"/>
+<circle cx="224.3" cy="736.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="251.2" cy="722.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="274.4" cy="739.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="432.2" cy="629.2" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="470.7" cy="611.8" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="497.6" cy="641.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="216.6" cy="632.8" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="251.2" cy="613.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="282.1" cy="638.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<rect x="620" y="535" width="540" height="280" rx="16" fill="#fff" stroke="#d9e3ec"/>
+<text x="645.0" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#26384b" font-weight="700">Cloudy (+1) vs rest (−1)</text>
+<polygon points="735.0,764.0 966.0,764.0 735.0,659.0" fill="#f2eef9"/>
+<line x1="735.0" y1="659.0" x2="966.0" y2="764.0" stroke="#344a61" stroke-width="2.5"/>
+<line x1="735" y1="764" x2="1129" y2="764" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="735" y1="764" x2="735" y2="580" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="927.5" y="793.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">temperature x₁</text>
+<text x="701.0" y="676.5" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle" transform="rotate(-90 701 676.5)">precipitation x₂</text>
+<circle cx="1012.2" cy="736.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1046.8" cy="722.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1066.1" cy="741.2" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="804.3" cy="736.0" r="5.5" fill="#8b73bb" stroke="#fff" stroke-width="1.7"/>
+<circle cx="831.2" cy="722.0" r="5.5" fill="#8b73bb" stroke="#fff" stroke-width="1.7"/>
+<circle cx="854.4" cy="739.5" r="5.5" fill="#8b73bb" stroke="#fff" stroke-width="1.7"/>
+<circle cx="1012.2" cy="629.2" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1050.7" cy="611.8" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1077.7" cy="641.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="796.6" cy="632.8" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="831.2" cy="613.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="862.0" cy="638.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<rect x="40" y="835" width="540" height="280" rx="16" fill="#fff" stroke="#d9e3ec"/>
+<text x="65.0" y="868.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#26384b" font-weight="700">Rain (+1) vs rest (−1)</text>
+<polygon points="289.8,889.0 540.0,889.0 540.0,1002.8" fill="#eaf4fb"/>
+<line x1="289.8" y1="889.0" x2="540.0" y2="1002.8" stroke="#344a61" stroke-width="2.5"/>
+<line x1="155" y1="1064" x2="549" y2="1064" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="155" y1="1064" x2="155" y2="880" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="347.5" y="1093.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">temperature x₁</text>
+<text x="121.0" y="976.5" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle" transform="rotate(-90 121 976.5)">precipitation x₂</text>
+<circle cx="432.2" cy="1036.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="466.9" cy="1022.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="486.1" cy="1041.2" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="224.3" cy="1036.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="251.2" cy="1022.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="274.4" cy="1039.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="432.2" cy="929.2" r="5.5" fill="#2979b4" stroke="#fff" stroke-width="1.7"/>
+<circle cx="470.7" cy="911.8" r="5.5" fill="#2979b4" stroke="#fff" stroke-width="1.7"/>
+<circle cx="497.6" cy="941.5" r="5.5" fill="#2979b4" stroke="#fff" stroke-width="1.7"/>
+<circle cx="216.6" cy="932.8" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="251.2" cy="913.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="282.1" cy="938.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<rect x="620" y="835" width="540" height="280" rx="16" fill="#fff" stroke="#d9e3ec"/>
+<text x="645.0" y="868.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#26384b" font-weight="700">Snow (+1) vs rest (−1)</text>
+<polygon points="735.0,1002.8 735.0,889.0 985.2,889.0" fill="#e9f7f5"/>
+<line x1="735.0" y1="1002.8" x2="985.2" y2="889.0" stroke="#344a61" stroke-width="2.5"/>
+<line x1="735" y1="1064" x2="1129" y2="1064" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="735" y1="1064" x2="735" y2="880" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="927.5" y="1093.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">temperature x₁</text>
+<text x="701.0" y="976.5" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle" transform="rotate(-90 701 976.5)">precipitation x₂</text>
+<circle cx="1012.2" cy="1036.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1046.8" cy="1022.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1066.1" cy="1041.2" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="804.3" cy="1036.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="831.2" cy="1022.0" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="854.4" cy="1039.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1012.2" cy="929.2" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1050.7" cy="911.8" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="1077.7" cy="941.5" r="5.5" fill="#fff" stroke="#8190a0" stroke-width="1.5"/>
+<circle cx="796.6" cy="932.8" r="5.5" fill="#2e9f9a" stroke="#fff" stroke-width="1.7"/>
+<circle cx="831.2" cy="913.5" r="5.5" fill="#2e9f9a" stroke="#fff" stroke-width="1.7"/>
+<circle cx="862.0" cy="938.0" r="5.5" fill="#2e9f9a" stroke="#fff" stroke-width="1.7"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400" role="img" aria-labelledby="title desc">
+<title id="title">0–1 loss in a six-email spam filter example</title>
+<desc id="desc">Three normal emails contain zero, one, and two spam keywords. Three spam emails contain two, four, and five spam keywords. A threshold at three predicts normal to its left and spam to its right. The spam email with two keywords is misclassified, so the average 0–1 loss is one sixth.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#41566d"/></marker></defs>
+<rect width="900" height="400" rx="18" fill="#f5f8fb"/>
+<text x="34.0" y="43.0" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#26384b" font-weight="700">0–1 loss: one mistake in six emails</text>
+<text x="34.0" y="70.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#526273" >Feature: number of spam keywords in an email</text>
+<rect x="140" y="110" width="335.0" height="190" fill="#fff0ee"/>
+<rect x="475.0" y="110" width="335.0" height="190" fill="#eef6fc"/>
+<text x="307.5" y="137.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#a33f38" font-weight="700" text-anchor="middle">Predict normal (−1)</text>
+<text x="642.5" y="137.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#21648f" font-weight="700" text-anchor="middle">Predict spam (+1)</text>
+<line x1="475.0" y1="110" x2="475.0" y2="300" stroke="#2e9867" stroke-width="2.5" stroke-dasharray="7 6"/>
+<text x="30.0" y="210.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#344a61" text-anchor="middle" transform="rotate(-90 30 210)">actual class</text>
+<text x="126.0" y="195.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#526273" text-anchor="end">Spam +1</text>
+<text x="126.0" y="265.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#526273" text-anchor="end">Normal −1</text>
+<line x1="140" y1="190" x2="810" y2="190" stroke="#d9e3ec" stroke-width="1.5"/>
+<line x1="140" y1="260" x2="810" y2="260" stroke="#d9e3ec" stroke-width="1.5"/>
+<line x1="140" y1="300" x2="820" y2="300" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="140" y1="300" x2="140" y2="102" stroke="#41566d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="134" y1="190" x2="146" y2="190" stroke="#41566d" stroke-width="1.5"/>
+<line x1="134" y1="260" x2="146" y2="260" stroke="#41566d" stroke-width="1.5"/>
+<line x1="160.0" y1="294" x2="160.0" y2="306" stroke="#41566d" stroke-width="1.5"/>
+<text x="160.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">0</text>
+<line x1="265.0" y1="294" x2="265.0" y2="306" stroke="#41566d" stroke-width="1.5"/>
+<text x="265.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">1</text>
+<line x1="370.0" y1="294" x2="370.0" y2="306" stroke="#41566d" stroke-width="1.5"/>
+<text x="370.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">2</text>
+<line x1="475.0" y1="294" x2="475.0" y2="306" stroke="#41566d" stroke-width="1.5"/>
+<text x="475.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">3</text>
+<line x1="580.0" y1="294" x2="580.0" y2="306" stroke="#41566d" stroke-width="1.5"/>
+<text x="580.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">4</text>
+<line x1="685.0" y1="294" x2="685.0" y2="306" stroke="#41566d" stroke-width="1.5"/>
+<text x="685.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">5</text>
+<line x1="790.0" y1="294" x2="790.0" y2="306" stroke="#41566d" stroke-width="1.5"/>
+<text x="790.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#526273" text-anchor="middle">6</text>
+<circle cx="160.0" cy="260" r="8" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="265.0" cy="260" r="8" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="370.0" cy="260" r="8" fill="#d4554c" stroke="#fff" stroke-width="2"/>
+<circle cx="370.0" cy="190" r="15" fill="none" stroke="#e4a137" stroke-width="3"/>
+<circle cx="370.0" cy="190" r="8" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="580.0" cy="190" r="8" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<circle cx="685.0" cy="190" r="8" fill="#2979b4" stroke="#fff" stroke-width="2"/>
+<text x="370.0" y="166.0" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#9a6a1c" font-weight="700" text-anchor="middle">Missed spam</text>
+<text x="475.0" y="353.0" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#344a61" text-anchor="middle">number of spam keywords</text>
+<text x="475.0" y="384.0" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#344a61" text-anchor="middle">5 correct + 1 wrong → 0–1 loss = 1/6 ≈ 0.17</text>
+</svg>
