@@ -38,6 +38,8 @@ Where does AI stop being able to reliably rebuild software from scratch?
 
 The overall process is still the same, but the execution phase is somewhat simpler.
 
+![Software engineering before and with AI agents](images/2-gen-ai/software-engineering-with-ai-agents.jpeg)
+
 
 - technical debt
 - cognitive debt

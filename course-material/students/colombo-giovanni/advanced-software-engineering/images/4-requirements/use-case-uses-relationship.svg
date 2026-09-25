@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
+  <title id="title">Uses relationships between use cases</title>
+  <desc id="desc">The accounts manager participates in Raise monthly invoice, which uses List orders from customer and Query order status.</desc>
+  <style>
+    .label { font: 20px Arial, sans-serif; fill: #172033; text-anchor: middle; }
+    .small { font: 18px Arial, sans-serif; fill: #344054; text-anchor: middle; }
+    .line { fill: none; stroke: #344054; stroke-width: 2; }
+    .use { fill: #f7faff; stroke: #344054; stroke-width: 2; }
+  </style>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9z" fill="#344054"/></marker></defs>
+  <rect width="960" height="340" fill="#fff"/>
+  <g class="line"><circle cx="95" cy="100" r="13"/><path d="M95 113v53m0-40-25 25m25-25 25 25m-25 15-22 33m22-33 22 33M120 153h101"/></g>
+  <text x="95" y="246" class="label">Accounts</text><text x="95" y="270" class="label">manager</text>
+
+  <ellipse cx="351" cy="153" rx="130" ry="52" class="use"/>
+  <text x="351" y="148" class="label">Raise monthly</text><text x="351" y="174" class="label">invoice</text>
+  <ellipse cx="750" cy="78" rx="143" ry="50" class="use"/>
+  <text x="750" y="73" class="label">List orders from</text><text x="750" y="99" class="label">customer</text>
+  <ellipse cx="750" cy="245" rx="143" ry="50" class="use"/>
+  <text x="750" y="240" class="label">Query order</text><text x="750" y="266" class="label">status</text>
+  <path d="M477 132 610 94M477 174 610 229" class="line" marker-end="url(#arrow)"/>
+  <text x="540" y="83" class="small">«uses»</text><text x="540" y="237" class="small">«uses»</text>
+</svg>

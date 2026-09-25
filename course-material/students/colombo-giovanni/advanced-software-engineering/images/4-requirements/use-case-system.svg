@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="510" viewBox="0 0 960 510" role="img" aria-labelledby="title desc">
+  <title id="title">Actors and use cases in an order system</title>
+  <desc id="desc">A system boundary contains five use cases. Customer, financial controller, warehouse foreman, and accounts manager are outside the boundary and connect to the use cases they participate in.</desc>
+  <style>
+    .label { font: 20px Arial, sans-serif; fill: #172033; text-anchor: middle; }
+    .name { font: 19px Arial, sans-serif; fill: #172033; text-anchor: middle; }
+    .line { fill: none; stroke: #344054; stroke-width: 2; }
+    .use { fill: #f7faff; stroke: #344054; stroke-width: 2; }
+  </style>
+  <rect width="960" height="510" fill="#fff"/>
+  <rect x="194" y="32" width="570" height="445" rx="6" fill="#fff" stroke="#64748b" stroke-width="2"/>
+  <text x="479" y="465" class="label">Order system</text>
+
+  <g class="line">
+    <circle cx="90" cy="90" r="13"/><path d="M90 103v53m0-40-25 25m25-25 25 25m-25 15-22 33m22-33 22 33"/>
+    <circle cx="90" cy="313" r="13"/><path d="M90 326v53m0-40-25 25m25-25 25 25m-25 15-22 33m22-33 22 33"/>
+    <circle cx="864" cy="90" r="13"/><path d="M864 103v53m0-40-25 25m25-25 25 25m-25 15-22 33m22-33 22 33"/>
+    <circle cx="864" cy="313" r="13"/><path d="M864 326v53m0-40-25 25m25-25 25 25m-25 15-22 33m22-33 22 33"/>
+    <path d="M115 143 265 117M115 143 265 216M115 366 265 367M839 143 725 117M839 366 725 367"/>
+  </g>
+  <text x="90" y="215" class="name">Customer</text>
+  <text x="90" y="434" class="name">Financial</text><text x="90" y="457" class="name">controller</text>
+  <text x="864" y="215" class="name">Warehouse</text><text x="864" y="238" class="name">foreman</text>
+  <text x="864" y="434" class="name">Accounts</text><text x="864" y="457" class="name">manager</text>
+
+  <ellipse cx="360" cy="117" rx="95" ry="42" class="use"/>
+  <text x="360" y="124" class="label">Generate order</text>
+  <ellipse cx="360" cy="216" rx="95" ry="42" class="use"/>
+  <text x="360" y="223" class="label">Receive bill</text>
+  <ellipse cx="360" cy="367" rx="95" ry="42" class="use"/>
+  <text x="360" y="374" class="label">Complete payment</text>
+  <ellipse cx="620" cy="117" rx="105" ry="42" class="use"/>
+  <text x="620" y="124" class="label">Fulfil order</text>
+  <ellipse cx="620" cy="367" rx="105" ry="42" class="use"/>
+  <text x="620" y="362" class="label">Raise monthly</text><text x="620" y="386" class="label">invoice</text>
+</svg>
