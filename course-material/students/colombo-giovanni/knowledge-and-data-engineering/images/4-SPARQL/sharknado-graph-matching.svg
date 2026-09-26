@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="390" viewBox="0 0 1080 390" role="img" aria-labelledby="title desc">
+  <title id="title">The Sharknado stars graph</title>
+  <desc id="desc">Sharknado has stars John Heard and Ian Ziering. Sharknado 2 has star Ian Ziering. Each arrow represents one RDF triple with predicate ex:stars.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <style>
+      .node { font: 600 21px Arial, sans-serif; fill: #172033; }
+      .edge { font: 600 18px Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+  <rect width="1080" height="390" fill="#ffffff"/>
+  <rect x="75" y="95" width="275" height="68" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="212" y="137" text-anchor="middle" class="node">ex:Sharknado</text>
+  <rect x="75" y="245" width="275" height="68" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="212" y="287" text-anchor="middle" class="node">ex:Sharknado2</text>
+
+  <rect x="755" y="95" width="250" height="68" rx="34" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="880" y="137" text-anchor="middle" class="node">ex:JohnHeard</text>
+  <rect x="755" y="245" width="250" height="68" rx="34" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="880" y="287" text-anchor="middle" class="node">ex:IanZiering</text>
+
+  <line x1="350" y1="129" x2="744" y2="129" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="350" y1="279" x2="744" y2="279" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 350 150 Q 555 150 748 259" fill="none" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="507" y="105" width="104" height="30" rx="8" fill="#ffffff"/>
+  <text x="559" y="126" text-anchor="middle" class="edge">ex:stars</text>
+  <rect x="507" y="255" width="104" height="30" rx="8" fill="#ffffff"/>
+  <text x="559" y="276" text-anchor="middle" class="edge">ex:stars</text>
+  <rect x="540" y="185" width="104" height="30" rx="8" fill="#ffffff"/>
+  <text x="592" y="206" text-anchor="middle" class="edge">ex:stars</text>
+
+</svg>
