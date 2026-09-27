@@ -28,6 +28,10 @@ At the moment, we are translating natural language into code with coding agents.
 
 Contract \(\rightarrow\) evaluation \(\rightarrow\) realisation
 
+![Jan Bosch's view of software engineering shifting from code as the asset to contract, evaluation, and realization](images/2-gen-ai/jan-bosch-contract-evaluation-realization.png)
+
+Related reading: [Field Notes: Is Software Still the Point?](https://janbosch.com/field-notes-is-software-still-the-point/)
+
 Where does AI stop being able to reliably rebuild software from scratch?
 
 ## Arvind Narayanan and Sayash Kapoor's Perspective

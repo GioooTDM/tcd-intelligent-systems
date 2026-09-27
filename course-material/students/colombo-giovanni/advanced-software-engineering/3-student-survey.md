@@ -74,7 +74,7 @@ A large project has both a **technical architecture** and a **functional archite
 - the technical architecture describes the technologies, infrastructure, and major system components;
 - the functional architecture divides the system into cohesive responsibilities.
 
-![Technical architecture organises technologies and infrastructure, while functional architecture organises system responsibilities](images/software-architecture-types.svg)
+![Technical architecture organises technologies and infrastructure, while functional architecture organises system responsibilities](images/3-student-survey/software-architecture-types.svg)
 
 The lecture compared functional architecture to a house: activities related to cooking belong in the kitchen, while activities related to watching television belong in the sitting room. Software responsibilities should be divided just as deliberately.
 
