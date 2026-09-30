@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 710" role="img" aria-labelledby="title desc">
+  <title id="title">Customer discovery process</title>
+  <desc id="desc">Customer discovery is highlighted in the four-stage process. A panel enlarges that stage to show the Business Model Canvas, extracting hypotheses, testing the problem and solution, then pivoting or proceeding. Arrows show a pivot back to the canvas and a return from customer validation to discovery.</desc>
+  <defs>
+    <marker id="grey-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#7b8da0"/></marker>
+    <marker id="blue-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#386fb8"/></marker>
+  </defs>
+  <style>
+    .bg{fill:#f8fafc}.phase{fill:#fff;stroke:#c9d3df;stroke-width:2}.phase-active{fill:#e9f2ff;stroke:#386fb8;stroke-width:3}.detail{fill:#f1f7fd;stroke:#8fb4dc;stroke-width:2}.step{fill:#fff;stroke:#afc1d4;stroke-width:2}.step-last{fill:#e9f2ff;stroke:#386fb8;stroke-width:2}.head{font:700 34px Arial,sans-serif;fill:#19324a}.sub{font:21px Arial,sans-serif;fill:#596d80}.phase-label{font:700 25px Arial,sans-serif;fill:#6e8092;text-anchor:middle}.phase-label-active{font:700 25px Arial,sans-serif;fill:#245b9b;text-anchor:middle}.detail-label{font:700 22px Arial,sans-serif;fill:#245b9b}.step-label{font:700 24px Arial,sans-serif;fill:#19324a;text-anchor:middle}.arrow{stroke:#7b8da0;stroke-width:4;fill:none;marker-end:url(#grey-arrow)}.link{stroke:#386fb8;stroke-width:4;fill:none;marker-end:url(#blue-arrow)}.caption{font:20px Arial,sans-serif;fill:#386fb8;text-anchor:middle}
+  </style>
+  <rect class="bg" width="1480" height="710"/>
+  <text class="head" x="40" y="55">Customer discovery</text>
+  <text class="sub" x="40" y="88">Test the business model before moving to the next stage.</text>
+  <path class="arrow" d="M300 175 H410"/><path class="arrow" d="M680 175 H790"/><path class="arrow" d="M1060 175 H1170"/>
+  <rect class="phase-active" x="40" y="125" width="260" height="100" rx="15"/>
+  <rect class="phase" x="420" y="125" width="260" height="100" rx="15"/>
+  <rect class="phase" x="800" y="125" width="260" height="100" rx="15"/>
+  <rect class="phase" x="1180" y="125" width="260" height="100" rx="15"/>
+  <text class="phase-label-active" x="170" y="166">Customer</text><text class="phase-label-active" x="170" y="196">discovery</text>
+  <text class="phase-label" x="550" y="166">Customer</text><text class="phase-label" x="550" y="196">validation</text>
+  <text class="phase-label" x="930" y="166">Customer</text><text class="phase-label" x="930" y="196">creation</text>
+  <text class="phase-label" x="1310" y="166">Company</text><text class="phase-label" x="1310" y="196">building</text>
+  <path class="arrow" d="M550 235 V278 H220 V235"/>
+  <rect class="detail" x="28" y="310" width="1424" height="370" rx="18"/>
+  <text class="detail-label" x="56" y="354">DETAIL OF HIGHLIGHTED STAGE: CUSTOMER DISCOVERY</text>
+  <path class="arrow" d="M230 485 H320"/><path class="arrow" d="M526 485 H616"/><path class="arrow" d="M822 485 H912"/><path class="arrow" d="M1118 485 H1208"/>
+  <rect class="step" x="40" y="430" width="190" height="110" rx="14"/>
+  <rect class="step" x="336" y="430" width="190" height="110" rx="14"/>
+  <rect class="step" x="632" y="430" width="190" height="110" rx="14"/>
+  <rect class="step" x="928" y="430" width="190" height="110" rx="14"/>
+  <rect class="step-last" x="1224" y="430" width="190" height="110" rx="14"/>
+  <text class="step-label" x="135" y="462">Business</text><text class="step-label" x="135" y="486">Model</text><text class="step-label" x="135" y="510">Canvas</text>
+  <text class="step-label" x="431" y="478">Extract</text><text class="step-label" x="431" y="506">hypotheses</text>
+  <text class="step-label" x="727" y="478">Test</text><text class="step-label" x="727" y="506">problem</text>
+  <text class="step-label" x="1023" y="478">Test</text><text class="step-label" x="1023" y="506">solution</text>
+  <text class="step-label" x="1319" y="478">Pivot or</text><text class="step-label" x="1319" y="506">proceed</text>
+  <path class="link" d="M1319 550 V582 H135 V550"/>
+  <text class="caption" x="747" y="649">Pivot: revise the canvas and test again</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 660" role="img" aria-labelledby="title desc">
+  <title id="title">Customer validation process</title>
+  <desc id="desc">Customer validation is highlighted in the four-stage process. A panel enlarges that stage to show getting ready to sell, selling, positioning, then pivoting or proceeding. A feedback arrow returns from validation to discovery. This stage is beyond the module's available time.</desc>
+  <defs><marker id="grey-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#7b8da0"/></marker></defs>
+  <style>
+    .bg{fill:#f8fafc}.phase{fill:#fff;stroke:#c9d3df;stroke-width:2}.phase-active{fill:#e9f2ff;stroke:#386fb8;stroke-width:3}.detail{fill:#f1f7fd;stroke:#8fb4dc;stroke-width:2}.step{fill:#fff;stroke:#afc1d4;stroke-width:2}.step-last{fill:#e9f2ff;stroke:#386fb8;stroke-width:2}.head{font:700 34px Arial,sans-serif;fill:#19324a}.sub{font:21px Arial,sans-serif;fill:#596d80}.phase-label{font:700 25px Arial,sans-serif;fill:#6e8092;text-anchor:middle}.phase-label-active{font:700 25px Arial,sans-serif;fill:#245b9b;text-anchor:middle}.detail-label{font:700 22px Arial,sans-serif;fill:#245b9b}.step-label{font:700 25px Arial,sans-serif;fill:#19324a;text-anchor:middle}.arrow{stroke:#7b8da0;stroke-width:4;fill:none;marker-end:url(#grey-arrow)}.foot{font:700 20px Arial,sans-serif;fill:#596d80;text-anchor:middle}
+  </style>
+  <rect class="bg" width="1480" height="660"/>
+  <text class="head" x="40" y="55">Customer validation</text>
+  <text class="sub" x="40" y="88">Explore whether the model supports a repeatable sales process.</text>
+  <path class="arrow" d="M300 175 H410"/><path class="arrow" d="M680 175 H790"/><path class="arrow" d="M1060 175 H1170"/>
+  <rect class="phase" x="40" y="125" width="260" height="100" rx="15"/>
+  <rect class="phase-active" x="420" y="125" width="260" height="100" rx="15"/>
+  <rect class="phase" x="800" y="125" width="260" height="100" rx="15"/>
+  <rect class="phase" x="1180" y="125" width="260" height="100" rx="15"/>
+  <text class="phase-label" x="170" y="166">Customer</text><text class="phase-label" x="170" y="196">discovery</text>
+  <text class="phase-label-active" x="550" y="166">Customer</text><text class="phase-label-active" x="550" y="196">validation</text>
+  <text class="phase-label" x="930" y="166">Customer</text><text class="phase-label" x="930" y="196">creation</text>
+  <text class="phase-label" x="1310" y="166">Company</text><text class="phase-label" x="1310" y="196">building</text>
+  <path class="arrow" d="M550 235 V278 H220 V235"/>
+  <rect class="detail" x="28" y="310" width="1424" height="320" rx="18"/>
+  <text class="detail-label" x="56" y="354">DETAIL OF HIGHLIGHTED STAGE: CUSTOMER VALIDATION</text>
+  <path class="arrow" d="M300 480 H410"/><path class="arrow" d="M680 480 H790"/><path class="arrow" d="M1060 480 H1170"/>
+  <rect class="step" x="40" y="430" width="260" height="100" rx="14"/>
+  <rect class="step" x="420" y="430" width="260" height="100" rx="14"/>
+  <rect class="step" x="800" y="430" width="260" height="100" rx="14"/>
+  <rect class="step-last" x="1180" y="430" width="260" height="100" rx="14"/>
+  <text class="step-label" x="170" y="472">Get ready to</text><text class="step-label" x="170" y="502">sell</text>
+  <text class="step-label" x="550" y="488">Sell, sell, sell</text>
+  <text class="step-label" x="930" y="488">Positioning</text>
+  <text class="step-label" x="1310" y="472">Pivot or</text><text class="step-label" x="1310" y="502">proceed</text>
+  <text class="foot" x="740" y="600">Beyond this module</text>
+</svg>

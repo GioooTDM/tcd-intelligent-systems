@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 400" role="img" aria-labelledby="title desc">
+  <title id="title">The four stages of customer development</title>
+  <desc id="desc">Customer discovery, customer validation, customer creation, and company building in sequence. Discovery is highlighted as the focus of this module.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#7b8da0"/></marker></defs>
+  <style>
+    .bg{fill:#f8fafc}.card{fill:#fff;stroke:#c9d3df;stroke-width:2}.active{fill:#e9f2ff;stroke:#386fb8;stroke-width:3}.head{font:700 34px Arial,sans-serif;fill:#19324a}.sub{font:21px Arial,sans-serif;fill:#596d80}.label{font:700 29px Arial,sans-serif;fill:#19324a;text-anchor:middle}.arrow{stroke:#7b8da0;stroke-width:4;fill:none;marker-end:url(#arrow)}.foot{font:700 20px Arial,sans-serif;fill:#386fb8;text-anchor:middle}
+  </style>
+  <rect class="bg" width="1480" height="400"/>
+  <text class="head" x="40" y="55">Customer development</text>
+  <text class="sub" x="40" y="88">Four stages. This module concentrates on the first.</text>
+  <path class="arrow" d="M300 225 H410"/><path class="arrow" d="M680 225 H790"/><path class="arrow" d="M1060 225 H1170"/>
+  <rect class="active" x="40" y="150" width="260" height="150" rx="16"/>
+  <rect class="card" x="420" y="150" width="260" height="150" rx="16"/>
+  <rect class="card" x="800" y="150" width="260" height="150" rx="16"/>
+  <rect class="card" x="1180" y="150" width="260" height="150" rx="16"/>
+  <text class="label" x="170" y="216">Customer</text><text class="label" x="170" y="250">discovery</text>
+  <text class="label" x="550" y="216">Customer</text><text class="label" x="550" y="250">validation</text>
+  <text class="label" x="930" y="216">Customer</text><text class="label" x="930" y="250">creation</text>
+  <text class="label" x="1310" y="216">Company</text><text class="label" x="1310" y="250">building</text>
+  <text class="foot" x="170" y="330">Focus of this module</text>
+</svg>

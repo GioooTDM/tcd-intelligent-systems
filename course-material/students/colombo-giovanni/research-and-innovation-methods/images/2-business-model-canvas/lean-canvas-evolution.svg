@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Lean Canvas: four blocks adapted from the Business Model Canvas</title>
+  <desc id="desc">The Lean Canvas keeps the Business Model Canvas layout. Four blue blocks show the replacements: Problem for Key Partners, Solution for Key Activities, Key Metrics for Key Resources, and Unfair Advantage for Customer Relationships. The other five blocks remain unchanged.</desc>
+  <style>
+    .bg { fill: #f8fafc; }
+    .box { fill: #fff; stroke: #bdc8d5; stroke-width: 2; }
+    .changed { fill: #e9f2ff; stroke: #386fb8; stroke-width: 2.5; }
+    .title { font: 700 22px Arial, sans-serif; fill: #18324d; }
+    .body { font: 17px Arial, sans-serif; fill: #52677a; }
+    .replacement { font: 16px Arial, sans-serif; fill: #386fb8; }
+    .head { font: 700 30px Arial, sans-serif; fill: #18324d; }
+    .small { font: 18px Arial, sans-serif; fill: #52677a; }
+  </style>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="head" x="42" y="55">Lean Canvas</text>
+  <text class="small" x="42" y="82">Four BMC blocks are replaced; the other five remain unchanged</text>
+  <g>
+    <rect class="changed" x="40" y="115" width="220" height="475" rx="8"/>
+    <rect class="changed" x="260" y="115" width="220" height="237" rx="8"/>
+    <rect class="changed" x="260" y="352" width="220" height="238" rx="8"/>
+    <rect class="box" x="480" y="115" width="240" height="475" rx="8"/>
+    <rect class="changed" x="720" y="115" width="220" height="237" rx="8"/>
+    <rect class="box" x="720" y="352" width="220" height="238" rx="8"/>
+    <rect class="box" x="940" y="115" width="220" height="475" rx="8"/>
+    <rect class="box" x="40" y="590" width="560" height="130" rx="8"/>
+    <rect class="box" x="600" y="590" width="560" height="130" rx="8"/>
+  </g>
+  <text class="title" x="58" y="151">Problem</text>
+  <text class="replacement" x="58" y="180">replaces Key partners</text>
+  <text class="body" x="58" y="211">What problem needs</text><text class="body" x="58" y="234">solving?</text>
+  <text class="title" x="278" y="151">Solution</text>
+  <text class="replacement" x="278" y="180">replaces Key activities</text>
+  <text class="title" x="278" y="390">Key metrics</text>
+  <text class="replacement" x="278" y="419">replaces Key resources</text>
+  <text class="title" x="498" y="151">Value proposition</text><text class="body" x="498" y="183">What customer need</text><text class="body" x="498" y="208">do we address?</text>
+  <text class="title" x="738" y="151">Unfair advantage</text>
+  <text class="replacement" x="738" y="180">replaces Customer</text><text class="replacement" x="738" y="200">Relationships</text>
+  <text class="title" x="738" y="390">Channels</text><text class="body" x="738" y="422">How do we reach</text><text class="body" x="738" y="447">customers?</text>
+  <text class="title" x="958" y="151">Customer</text><text class="title" x="958" y="178">segments</text><text class="body" x="958" y="210">Who needs it?</text>
+  <text class="title" x="58" y="628">Cost structure</text><text class="body" x="58" y="661">What does it cost?</text>
+  <text class="title" x="618" y="628">Revenue streams</text><text class="body" x="618" y="661">How does it earn money?</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Nine Business Model Canvas hypotheses</title>
+  <desc id="desc">The standard nine-block Business Model Canvas with one question mark in every block, indicating that each entry begins as an assumption to test.</desc>
+  <style>
+    .bg { fill: #f8fafc; }
+    .box { fill: #fff; stroke: #bdc8d5; stroke-width: 2; }
+    .heading { font: 700 30px Arial, sans-serif; fill: #18324d; }
+    .subtitle { font: 18px Arial, sans-serif; fill: #52677a; }
+    .label { font: 700 21px Arial, sans-serif; fill: #18324d; }
+    .mark { font: 700 76px Arial, sans-serif; fill: #8092a3; text-anchor: middle; }
+  </style>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="heading" x="40" y="55">Nine blocks, nine hypotheses</text>
+  <text class="subtitle" x="40" y="83">Every part of the proposed model needs evidence from the real world.</text>
+  <g>
+    <rect class="box" x="40" y="115" width="220" height="475" rx="8"/>
+    <rect class="box" x="260" y="115" width="220" height="237" rx="8"/>
+    <rect class="box" x="260" y="352" width="220" height="238" rx="8"/>
+    <rect class="box" x="480" y="115" width="240" height="475" rx="8"/>
+    <rect class="box" x="720" y="115" width="220" height="237" rx="8"/>
+    <rect class="box" x="720" y="352" width="220" height="238" rx="8"/>
+    <rect class="box" x="940" y="115" width="220" height="475" rx="8"/>
+    <rect class="box" x="40" y="590" width="560" height="130" rx="8"/>
+    <rect class="box" x="600" y="590" width="560" height="130" rx="8"/>
+  </g>
+  <text class="label" x="58" y="151">Key partners</text>
+  <text class="label" x="278" y="151">Key activities</text>
+  <text class="label" x="278" y="390">Key resources</text>
+  <text class="label" x="498" y="151">Value proposition</text>
+  <text class="label" x="738" y="151">Relationships</text>
+  <text class="label" x="738" y="390">Channels</text>
+  <text class="label" x="958" y="151">Customer</text>
+  <text class="label" x="958" y="178">segments</text>
+  <text class="label" x="58" y="628">Cost structure</text>
+  <text class="label" x="618" y="628">Revenue streams</text>
+  <text class="mark" x="150" y="370">?</text>
+  <text class="mark" x="370" y="280">?</text>
+  <text class="mark" x="370" y="518">?</text>
+  <text class="mark" x="600" y="370">?</text>
+  <text class="mark" x="830" y="280">?</text>
+  <text class="mark" x="830" y="518">?</text>
+  <text class="mark" x="1050" y="370">?</text>
+  <text class="mark" x="320" y="705">?</text>
+  <text class="mark" x="880" y="705">?</text>
+</svg>
